@@ -29,7 +29,7 @@ const NavBar = () => {
         </Link>
         <div className="hidden md:flex items-center gap-6 ml-7">
           <Link
-            to={"/all-elements"}
+            to={"/all-elements?page=1"}
             className="relative overflow-hidden h-6 group"
           >
             <span className="block group-hover:-translate-y-full transition-transform duration-300">
@@ -95,7 +95,7 @@ const NavBar = () => {
             ShowMenu ? "flex" : "hidden"
           } top-48 text-base left-0 bg-black w-full flex-col items-center gap-4`}
         >
-          <Link className="hover:text-indigo-600" to={"/all-elements"}>
+          <Link className="hover:text-indigo-600" to={"/all-elements?page=1"}>
             All Elements
           </Link>
           <Link className="hover:text-indigo-600" to={"/create-new"}>

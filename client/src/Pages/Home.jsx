@@ -10,6 +10,10 @@ import { useState } from "react";
 import { GoDotFill } from "react-icons/go";
 import ThreeButtonsLineSection from "../Components/ThreeButtonsLineSection";
 import MarqueeLine from "../Components/MarqueeLine";
+import BlogPostCom from "../Components/BlogPostCom";
+import TopCreator from "../Components/TopCreator";
+import Marquee from "react-fast-marquee";
+
 const Home = () => {
   const [SearchVal, setSearchVal] = useState("");
   const handleSearch = (e) => {
@@ -32,7 +36,7 @@ const Home = () => {
           </span>
           <span className="text-gray-500 text-base">•</span>
           <Link
-            to={"/all-elements"}
+            to={"/all-elements?page=1"}
             className="flex items-center gap-1 text-gray-500"
           >
             This Weak!
@@ -99,7 +103,7 @@ const Home = () => {
       </form>
       <ThreeButtonsLineSection />
       <Link
-        to={"/all-elements"}
+        to={"/all-elements?page=1"}
         className="flex cursor-pointer  -mt-2 justify-center items-center gap-3 py-3 px-10 rounded-xl hover:bg-[#48cae4bd] duration-200 transition-all bg-[#48cae4]"
       >
         <IoIosRocket /> Browse All Buttons
@@ -133,7 +137,7 @@ const Home = () => {
         <MarqueeLine MoveDir="left" MoveSpeed={20} />
         <MarqueeLine MoveDir="right" MoveSpeed={30} />
         <MarqueeLine MoveDir="left" MoveSpeed={40} />
-        <Link to={"/all-elements"} className="font-bold text-xl  mt-10">
+        <Link to={"/all-elements?page=1"} className="font-bold text-xl  mt-10">
           Browse All Tags
         </Link>
       </div>
@@ -186,17 +190,52 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <div className="w-screen bg-black min-h-screen md:flex-row flex-col flex items-center justify-between gap-4 rounded-b-3xl px-5">
-        <div className="md:w-[30%] w-screen bg-[#121212] rounded-3xl px-10 py-10 flex-col flex justify-center border-gray-400">
+        <div className="md:w-[30%] h-[400px] w-screen bg-[#121212] rounded-3xl px-10 py-10 flex-col flex justify-center border-gray-400">
           <FiGithub size={"70"} />
           <h1 className="text-[40px] font-bold">
             Button<span className="text-[#7251AC]"> JS</span>
           </h1>
-          <p className="text-[#D6D9DF] text-left text-[18px] font-semibold">The largest Open-Source UI <br /> Library, available on GitHub!</p>
-          <button className="flex justify-center items-center gap-2 py-2 px-3 rounded-[10px] bg-gray-800 mt-3 hover:bg-gray-700 duration-300 transition-all"><FaRegStar className="text-yellow-400"/>Star On GitHub</button>
+          <p className="text-[#D6D9DF] text-left text-[18px] font-semibold">
+            The largest Open-Source UI <br /> Library, available on GitHub!
+          </p>
+          <p
+            onClick={() => window.open("https://github.com/hassaanhaider88")}
+            className="underline cursor-pointer text-gray-400 font-semibold text-[18px]"
+          >
+            HassaanHaider
+          </p>
+          <button
+            onClick={() =>
+              window.open("https://github.com/hassaanhaider88/ButtonJs")
+            }
+            className="flex justify-center items-center gap-2 py-2 px-3 rounded-[10px] bg-gray-800 mt-3 hover:bg-gray-700 duration-300 transition-all"
+          >
+            <FaRegStar className="text-yellow-400" />
+            Star On GitHub
+          </button>
         </div>
-        <div className="w-[70%] bg-[#121212] border-gray-400"></div>
+        <div className="md:w-[70%] overflow-hidden relative h-[400px] w-screen bg-[#121212] rounded-3xl px-10 py-10 flex-col flex justify-center items-center border-gray-400">
+          <h1 className="text-[40px] absolute top-2 font-bold">
+            Latest from Blog
+          </h1>
+          <div className="flex absolute gap-5 -bottom-20 py-5 mt-10">
+            <BlogPostCom />
+          </div>
+        </div>
       </div>
+
+      <div className="TopCreator bg-black w-screen min-h-screen flex flex-col items-center justify-center">
+        <h1 className="text-5xl mb-10 font-semibold">Top Creators</h1>
+        <Marquee direction={'left'} speed={20}  >
+          <TopCreator From={0} To={6} />
+        </Marquee>
+        <Marquee direction={'right'} speed={30}  >
+          <TopCreator From={6} To={12} />
+        </Marquee>
+      </div>
+    
     </div>
   );
 };

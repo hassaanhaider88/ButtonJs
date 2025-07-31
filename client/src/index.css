@@ -4,6 +4,26 @@ body {
   overflow-x: hidden;
 }
 
-button{
+button {
   cursor: pointer;
+}
+
+.CustomScrollForCards {
+  overflow: auto;                /* enable scrolling */
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE and Edge */
+}
+
+/* Chrome, Safari, Edge */
+.CustomScrollForCards::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.CustomScrollForCards::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.CustomScrollForCards::-webkit-scrollbar-track {
+  background-color: transparent;
 }
