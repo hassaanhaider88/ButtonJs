@@ -1,21 +1,25 @@
 import { useState } from "react";
 import { TiThMenu } from "react-icons/ti";
 import { ImCross } from "react-icons/im";
+import { MdAddCircleOutline } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useGlobalState } from "@hmk_codeweb88/useglobalstate";
 import { toast } from "react-toastify";
+import UserProfile from "./UserProfile";
 
 const NavBar = () => {
   const [ShowMenu, setShowMenu] = useState(false);
+  const [IsLoginModelShow, setIsLoginModelShow] = useState(false);
   const [IsLogin, setIsLogin] = useGlobalState("IsLogin", false, {
     persist: true,
   });
+
   const [LoginUser, setLoginUser] = useGlobalState(
     "LoginUser",
     {},
     { persist: true }
   );
-  const handerLoginClick = () => {
+  const hanldeGoolgeLogin = () => {
     console.log("first");
     toast.success("please waite");
     console.log(LoginUser.lenght);
@@ -39,15 +43,12 @@ const NavBar = () => {
               All Elements
             </span>
           </Link>
-          <Link
-            to={"/create-new"}
-            className="relative overflow-hidden h-6 group"
-          >
+          <Link to={"/contact"} className="relative overflow-hidden h-6 group">
             <span className="block group-hover:-translate-y-full transition-transform duration-300">
-              Create New
+              Contact Us
             </span>
             <span className="block absolute top-full left-0 group-hover:translate-y-[-100%] transition-transform duration-300">
-              Create New
+              Contact Us
             </span>
           </Link>
           <Link to={"/donate"} className="relative overflow-hidden h-6 group">
@@ -69,15 +70,20 @@ const NavBar = () => {
         </div>
 
         <div className="hidden ml-14 md:flex items-center gap-4">
-          <button className="border border-slate-600 hover:bg-slate-800 px-4 py-2 rounded-full cursor-pointer text-sm font-medium transition">
-            <Link to={"/contact"}>Contact</Link>
+          <button className="border border-slate-600 hover:bg-slate-800 px-4 py-2 rounded-full cursor-pointer  text-sm font-medium transition">
+            <Link
+              to={"/create-new"}
+              className="flex justify-center items-center gap-2"
+            >
+              <MdAddCircleOutline size={13} /> Create
+            </Link>
           </button>
           {IsLogin ? (
-            "User"
+            <UserProfile IsModbile="false"/>
           ) : (
             <button
-              onClick={handerLoginClick}
-              className="bg-white cursor-pointer hover:shadow-[0px_0px_30px_14px] shadow-[0px_0px_30px_7px] hover:shadow-white/50 shadow-white/50 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-slate-100 transition duration-300"
+              onClick={() => setIsLoginModelShow(true)}
+              className=" cursor-pointer hover:shadow-[0px_0px_30px_14px] shadow-[0px_0px_30px_7px] hover:shadow-white/500 shadow-white/50 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-slate-500 transition duration-300"
             >
               Get Started
             </button>
@@ -93,13 +99,13 @@ const NavBar = () => {
         <div
           className={`absolute  ${
             ShowMenu ? "flex" : "hidden"
-          } top-48 text-base left-0 bg-black w-full flex-col items-center gap-4`}
+          } top-48 text-base left-0 bg-black w-full py-10 flex-col items-center gap-4`}
         >
           <Link className="hover:text-indigo-600" to={"/all-elements?page=1"}>
             All Elements
           </Link>
-          <Link className="hover:text-indigo-600" to={"/create-new"}>
-            Create New
+          <Link className="hover:text-indigo-600" to={"/contact"}>
+            Contact Us
           </Link>
           <Link className="hover:text-indigo-600" to={"/donate"}>
             Donate
@@ -108,16 +114,54 @@ const NavBar = () => {
             Docs
           </Link>
           <button className="border cursor-pointer border-slate-600 hover:bg-slate-800 px-4 py-2 rounded-full text-sm font-medium transition">
-            <Link to={"/contact"}>Contact</Link>
+            <Link to={"/create-new"}>Create</Link>
           </button>
-          <button
-            onClick={handerLoginClick}
-            className="bg-white cursor-pointer hover:shadow-[0px_0px_30px_14px] shadow-[0px_0px_30px_7px] hover:shadow-white/50 shadow-white/50 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-slate-100 transition duration-300"
-          >
-            Get Started
-          </button>
+          {IsLogin ? (
+            <UserProfile IsModbile="true"/>
+          ) : (
+            <button
+              onClick={() => setIsLoginModelShow(true)}
+              className=" cursor-pointer hover:shadow-[0px_0px_30px_14px] shadow-[0px_0px_30px_7px] hover:shadow-white/500 shadow-white/50 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-slate-500 transition duration-300"
+            >
+              Get Started
+            </button>
+          )}
         </div>
       </nav>
+      {IsLoginModelShow && (
+        <div
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsLoginModelShow(false);
+          }}
+          className="absolute w-screen top-0 flex justify-center items-center min-h-[100vh] bg-[#00000083] z-50"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="bg-white text-gray-500 w-[400px] mx-4 md:p-6 p-4 text-left text-sm rounded-xl shadow-[0px_0px_10px_0px] shadow-black/10"
+          >
+            <h2 className="text-2xl font-semibold mb-6 text-center text-gray-800">
+              Welcome back
+            </h2>
+
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                hanldeGoolgeLogin();
+              }}
+              className="w-full hover:scale-x-95 duration-200 transition-all hover:bg-gray-200 flex items-center gap-2 justify-center my-3 text-black bg-white border border-gray-500/30 py-2.5 rounded-full "
+            >
+              <img
+                className="h-4 w-4"
+                src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/login/googleFavicon.png"
+                alt="googleFavicon"
+              />
+              <p className="text-black">Log in with Google</p>
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

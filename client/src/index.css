@@ -6,7 +6,9 @@ body {
 
 button {
   cursor: pointer;
+  color:white;
 }
+
 
 .CustomScrollForCards {
   overflow: auto;                /* enable scrolling */

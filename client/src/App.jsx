@@ -5,6 +5,15 @@ import Home from "./Pages/Home";
 import AllElements from "./Pages/AllElements";
 import Footer from "./Components/Footer";
 import ViewCode from "./Pages/ViewCode";
+import CreateNew from "./Pages/CreateNew";
+import Docs from "./Pages/Docs";
+import Donate from "./Pages/Donate";
+import Contact from "./Pages/Contact";
+import AboutUs from "./Pages/AboutUs";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import UserProfile from "./Components/UserProfile";
+import Settings from "./Pages/Settings";
+import FeedBack from "./Pages/FeedBack";
 
 const App = () => {
   return (
@@ -13,13 +22,20 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/all-elements" element={<AllElements />} />
-        <Route path="/create-new" element={<AllElements />} />
-        <Route path="/donate" element={<AllElements />} />
-        <Route path="/docs" element={<AllElements />} />
-        <Route path="/docs" element={<AllElements />} />
+        <Route path="/create-new" element={<CreateNew />} />
+        <Route path="/profile" element={<UserProfile />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/feedback" element={<FeedBack />} />
+
+        <Route path="/donate" element={<Donate />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
         <Route path="/view-code/:id" element={<ViewCode />} />
+        <Route path="/docs" element={<Docs />} />
       </Routes>
-      
+
       <Footer />
     </>
   );

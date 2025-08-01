@@ -9,7 +9,7 @@ import { IoMdEye } from "react-icons/io";
 
 const SingleButtonOnAllElement = ({ buttonData }) => {
   const handleCopyCodeClick = () => {
-    navigator.clipboard.writeText(buttonData.CopyCode);
+    navigator.clipboard.writeText(buttonData.ReactTailwindCode);
     toast.success("Code copied to clipboard");
   };
   var Button = {
@@ -19,7 +19,7 @@ const SingleButtonOnAllElement = ({ buttonData }) => {
     <div className="py-5">
       <div className="w-[350px] group cursor-pointer overflow-hidden relative h-[404px] mx-auto bg-[#5c5c5e31] rounded-[30px] z-[1] ">
         <div className="card__content absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-          <JsxParser jsx={buttonData.PreviewCode} />
+          <JsxParser jsx={buttonData.ReactTailwindCode} />
         </div>
 
         <div
@@ -37,7 +37,7 @@ const SingleButtonOnAllElement = ({ buttonData }) => {
             <span className="absolute bottom-[-7px] left-0 w-0 h-[2px] bg-[#48cae4] transition-all duration-300 group-hover:w-full"></span>
           </button>
           <div className=" scale-80 inline-flex items-center group">
-            <Link to={`/view-code/${Button._id}`}>
+            <Link to={`/view-code/${buttonData._id}`}>
               {/*will dynamic url */}
               <button className="flex items-center gap-2 font-semibold text-[20px] text-black relative group">
                 <p className="relative cursor-pointer text-[20px] text-black transition-colors duration-300 group-hover:text-[#48cae4] before:content-['Get Code'] before:absolute before:inset-0 before:w-0 before:overflow-hidden before:text-[#48cae4] before:transition-all before:duration-300 group-hover:before:w-full">
