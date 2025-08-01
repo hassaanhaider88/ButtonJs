@@ -6,8 +6,11 @@ import { Link } from "react-router-dom";
 import { useGlobalState } from "@hmk_codeweb88/useglobalstate";
 import { toast } from "react-toastify";
 import UserProfile from "./UserProfile";
+import { auth, googleProvider } from "../FireBaceConfig";
+import { signInWithPopup } from "firebase/auth";
 
 const NavBar = () => {
+  console.log(import.meta.VITE_FIREBASE_APIKEY);
   const [ShowMenu, setShowMenu] = useState(false);
   const [IsLoginModelShow, setIsLoginModelShow] = useState(false);
   const [IsLogin, setIsLogin] = useGlobalState("IsLogin", false, {
@@ -19,11 +22,43 @@ const NavBar = () => {
     {},
     { persist: true }
   );
-  const hanldeGoolgeLogin = () => {
-    console.log("first");
-    toast.success("please waite");
-    console.log(LoginUser.lenght);
-    setIsLogin(true);
+  const hanldeGoolgeLogin = async () => {
+    try {
+      const result = await signInWithPopup(auth, googleProvider);
+      const user = result.user;
+      console.log(user);
+      // Extract user info some of these is dummy will be updated in setting page
+
+      const userInfo = {
+        _id: user.uid,
+        fullName: user.displayName,
+        username: user.displayName.toLocaleLowerCase().split(" ").join("_"),
+        email: user.email,
+        mainImg: user.photoURL,
+        coverImg: "",
+        createdButtons: [],
+        Blogs: [],
+        location: "pakistan",
+        companyName: "HMK CodeWeb",
+        GitHubProfileURL: "https://github.com/hassaanhaider88",
+        userWebsite: "hassaan-haider.netlify.app",
+        BioInfo:
+          "I am a skilled Front-End Developer with expertise in React.js and Next.js, crafting seamless and dynamic user interfaces. Proficient in the MERN stack (MongoDB, Express.js, React, Node.js), I excel in building full-stack applications. With a strong command of Git and GitHub, I ensure efficient version control and collaboration.",
+      };
+
+      if (userInfo) {
+        setIsLogin(true);
+        // before setting in localstorage this will uploaded on server
+        setLoginUser(userInfo);
+      }
+      setIsLoginModelShow(false);
+      toast.success("Login Successfull");
+
+      // Optionally send this to your Express server
+      // await axios.post("/api/auth/google", userInfo)
+    } catch (err) {
+      console.error("Login error:", err);
+    }
   };
   return (
     <div className="w-[100vw] z-50 flex cursor-pointer mt-4 sticky top-2 justify-center items-center">
@@ -79,7 +114,7 @@ const NavBar = () => {
             </Link>
           </button>
           {IsLogin ? (
-            <UserProfile IsModbile="false"/>
+            <UserProfile IsModbile="false" />
           ) : (
             <button
               onClick={() => setIsLoginModelShow(true)}
@@ -117,7 +152,7 @@ const NavBar = () => {
             <Link to={"/create-new"}>Create</Link>
           </button>
           {IsLogin ? (
-            <UserProfile IsModbile="true"/>
+            <UserProfile IsModbile="true" />
           ) : (
             <button
               onClick={() => setIsLoginModelShow(true)}
