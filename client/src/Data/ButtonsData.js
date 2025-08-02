@@ -2,7 +2,7 @@ var ButtonData = [
   {
     _id: "234dfg2345edcv",
     buttonCategory: "Glass", // Category like "Glass", "Neumorphism", "Gradient", "3D
-
+    DeploymentStage: "Live", //either live or Pending
     ReactTailwindCode: `
                 <button className="w-[150px] h-[50px] flex items-center justify-center outline-none cursor-pointer rounded-full border border-[#8F9092] text-[#606060] font-semibold text-sm font-sans shadow-[inset_0_0_0_0_#CECFD1] bg-gradient-to-t from-[#D8D9DB] via-[#ffffffcc] to-[#FDFDFD] hover:shadow-[0_4px_3px_1px_#FCFCFC,0_6px_8px_#D6D7D9,0_-4px_4px_#CECFD1,0_-6px_4px_#FEFEFE,inset_0_0_3px_3px_#CECFD1] active:shadow-[0_4px_3px_1px_#FCFCFC,0_6px_8px_#D6D7D9,0_-4px_4px_#CECFD1,0_-6px_4px_#FEFEFE,inset_0_0_5px_3px_#999,inset_0_0_30px_#aaa] focus:shadow-[0_4px_3px_1px_#FCFCFC,0_6px_8px_#D6D7D9,0_-4px_4px_#CECFD1,0_-6px_4px_#FEFEFE,inset_0_0_5px_3px_#999,inset_0_0_30px_#aaa]">
           Button
@@ -16,6 +16,7 @@ var ButtonData = [
   {
     _id: "btn001glassstyle123456789",
     buttonCategory: "Glass",
+    DeploymentStage: "Live",
     ReactTailwindCode: `
       <button className="px-6 py-2 rounded-lg bg-white/10 border border-white/30 backdrop-blur-lg text-white font-medium shadow-md hover:shadow-xl transition-all duration-300">
         Glass Button
@@ -30,6 +31,7 @@ var ButtonData = [
   {
     _id: "btn002gradientx5678912abc",
     buttonCategory: "Gradient",
+    DeploymentStage: "Live",
     ReactTailwindCode: `
       <button className="px-6 py-2 rounded-full bg-gradient-to-r from-[#48CAE4] to-[#0077B6] text-white font-semibold hover:opacity-90 transition-all">
         Gradient Button
@@ -44,6 +46,7 @@ var ButtonData = [
   {
     _id: "btn003neumorphism90d0d0f",
     buttonCategory: "Neumorphism",
+    DeploymentStage: "Pending",
     ReactTailwindCode: `
       <button className="px-6 py-2 rounded-xl bg-[#e0e0e0] text-gray-800 shadow-[8px_8px_15px_#bebebe,-8px_-8px_15px_#ffffff] hover:shadow-inner transition-all">
         Neumorphic Button
@@ -58,6 +61,7 @@ var ButtonData = [
   {
     _id: "btn0043dstyle2025xyz321",
     buttonCategory: "3D",
+    DeploymentStage: "Pending",
     ReactTailwindCode: `
       <button className="px-6 py-2 rounded-lg bg-[#48CAE4] text-white font-bold shadow-[0_4px_0_#0077B6] active:shadow-[0_2px_0_#0077B6] transform active:translate-y-1 transition-all">
         3D Button
@@ -72,6 +76,7 @@ var ButtonData = [
   {
     _id: "btn005outlinebtnpqr09876",
     buttonCategory: "Outline",
+    DeploymentStage: "Pending",
     ReactTailwindCode: `
       <button className="px-6 py-2 border-2 border-[#48CAE4] text-[#48CAE4] rounded-full hover:bg-[#48CAE4] hover:text-white transition-colors duration-300">
         Outline Button
@@ -86,6 +91,7 @@ var ButtonData = [
   {
     _id: "btn006outlinebtnpqr09876",
     buttonCategory: "Outline",
+    DeploymentStage: "Live",
     ReactTailwindCode: `<button
   className="relative text-[#f0f0f0] text-[16px] px-[20px] py-[15px] border-none bg-transparent z-[1] overflow-hidden"
   onMouseEnter={(e) => {
@@ -148,6 +154,7 @@ var ButtonData = [
   {
     _id: "btn007outlinebtnpqr09876",
     buttonCategory: "Outline",
+    DeploymentStage: "Live",
     ReactTailwindCode: `<button
   className="relative cursor-pointer text-[13px] rounded-[16px] border-0 p-[2px] bg-[radial-gradient(circle_80px_at_80%_-10%,_#ffffff,_#181b1b)]"
   style={{
@@ -208,6 +215,7 @@ var ButtonData = [
   {
     _id: "btn008outlinebtnpqr09876",
     buttonCategory: "Outline",
+    DeploymentStage: "Live",
     ReactTailwindCode: `<button
       className="relative w-[6.5em] h-[2.3em] m-[0.5em] text-[20px] font-bold rounded-[0.625em] border-none overflow-hidden z-[1] transition-colors duration-500"
       style={{
@@ -238,6 +246,7 @@ var ButtonData = [
   },
   {
     _id: "btn009outlinebtnpqr09876",
+    DeploymentStage: "Live",
     buttonCategory: "Outline",
     ReactTailwindCode: `<div className="relative bg-white text-black px-[15px] py-[15px] m-[10px] rounded-[10px] w-[150px] h-[50px] text-[17px] flex flex-col justify-center items-center shadow-md cursor-pointer transition-all duration-300 group">
       
@@ -260,10 +269,10 @@ var ButtonData = [
     createdOn: "2025-07-28T14:20:00.000+00:00",
     isPremium: false,
   },
-   {
+  {
     _id: "234dfg2345edcv",
     buttonCategory: "Glass", // Category like "Glass", "Neumorphism", "Gradient", "3D
-
+    DeploymentStage: "Live",
     ReactTailwindCode: `
                 <button className="w-[150px] h-[50px] flex items-center justify-center outline-none cursor-pointer rounded-full border border-[#8F9092] text-[#606060] font-semibold text-sm font-sans shadow-[inset_0_0_0_0_#CECFD1] bg-gradient-to-t from-[#D8D9DB] via-[#ffffffcc] to-[#FDFDFD] hover:shadow-[0_4px_3px_1px_#FCFCFC,0_6px_8px_#D6D7D9,0_-4px_4px_#CECFD1,0_-6px_4px_#FEFEFE,inset_0_0_3px_3px_#CECFD1] active:shadow-[0_4px_3px_1px_#FCFCFC,0_6px_8px_#D6D7D9,0_-4px_4px_#CECFD1,0_-6px_4px_#FEFEFE,inset_0_0_5px_3px_#999,inset_0_0_30px_#aaa] focus:shadow-[0_4px_3px_1px_#FCFCFC,0_6px_8px_#D6D7D9,0_-4px_4px_#CECFD1,0_-6px_4px_#FEFEFE,inset_0_0_5px_3px_#999,inset_0_0_30px_#aaa]">
           Button
@@ -277,6 +286,7 @@ var ButtonData = [
   {
     _id: "btn001glassstyle123456789",
     buttonCategory: "Glass",
+    DeploymentStage: "Pending",
     ReactTailwindCode: `
       <button className="px-6 py-2 rounded-lg bg-white/10 border border-white/30 backdrop-blur-lg text-white font-medium shadow-md hover:shadow-xl transition-all duration-300">
         Glass Button
@@ -305,6 +315,7 @@ var ButtonData = [
   {
     _id: "btn003neumorphism90d0d0f",
     buttonCategory: "Neumorphism",
+    DeploymentStage: "Pending",
     ReactTailwindCode: `
       <button className="px-6 py-2 rounded-xl bg-[#e0e0e0] text-gray-800 shadow-[8px_8px_15px_#bebebe,-8px_-8px_15px_#ffffff] hover:shadow-inner transition-all">
         Neumorphic Button
@@ -319,6 +330,8 @@ var ButtonData = [
   {
     _id: "btn0043dstyle2025xyz321",
     buttonCategory: "3D",
+    DeploymentStage: "Pending",
+
     ReactTailwindCode: `
       <button className="px-6 py-2 rounded-lg bg-[#48CAE4] text-white font-bold shadow-[0_4px_0_#0077B6] active:shadow-[0_2px_0_#0077B6] transform active:translate-y-1 transition-all">
         3D Button
@@ -333,6 +346,8 @@ var ButtonData = [
   {
     _id: "btn005outlinebtnpqr09876",
     buttonCategory: "Outline",
+    DeploymentStage: "Pending",
+
     ReactTailwindCode: `
       <button className="px-6 py-2 border-2 border-[#48CAE4] text-[#48CAE4] rounded-full hover:bg-[#48CAE4] hover:text-white transition-colors duration-300">
         Outline Button
@@ -347,6 +362,7 @@ var ButtonData = [
   {
     _id: "btn006outlinebtnpqr09876",
     buttonCategory: "Outline",
+    DeploymentStage: "Live",
     ReactTailwindCode: `<button
   className="relative text-[#f0f0f0] text-[16px] px-[20px] py-[15px] border-none bg-transparent z-[1] overflow-hidden"
   onMouseEnter={(e) => {
@@ -409,6 +425,7 @@ var ButtonData = [
   {
     _id: "btn007outlinebtnpqr09876",
     buttonCategory: "Outline",
+    DeploymentStage: "Live",
     ReactTailwindCode: `<button
   className="relative cursor-pointer text-[13px] rounded-[16px] border-0 p-[2px] bg-[radial-gradient(circle_80px_at_80%_-10%,_#ffffff,_#181b1b)]"
   style={{
@@ -469,6 +486,7 @@ var ButtonData = [
   {
     _id: "btn008outlinebtnpqr09876",
     buttonCategory: "Outline",
+    DeploymentStage: "Live",
     ReactTailwindCode: `<button
       className="relative w-[6.5em] h-[2.3em] m-[0.5em] text-[20px] font-bold rounded-[0.625em] border-none overflow-hidden z-[1] transition-colors duration-500"
       style={{
@@ -500,6 +518,7 @@ var ButtonData = [
   {
     _id: "btn009outlinebtnpqr09876",
     buttonCategory: "Outline",
+    DeploymentStage: "Live",
     ReactTailwindCode: `<div className="relative bg-white text-black px-[15px] py-[15px] m-[10px] rounded-[10px] w-[150px] h-[50px] text-[17px] flex flex-col justify-center items-center shadow-md cursor-pointer transition-all duration-300 group">
       
       {/* Tooltip */}

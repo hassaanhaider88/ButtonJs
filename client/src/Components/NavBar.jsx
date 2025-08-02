@@ -10,7 +10,6 @@ import { auth, googleProvider } from "../FireBaceConfig";
 import { signInWithPopup } from "firebase/auth";
 
 const NavBar = () => {
-  console.log(import.meta.VITE_FIREBASE_APIKEY);
   const [ShowMenu, setShowMenu] = useState(false);
   const [IsLoginModelShow, setIsLoginModelShow] = useState(false);
   const [IsLogin, setIsLogin] = useGlobalState("IsLogin", false, {

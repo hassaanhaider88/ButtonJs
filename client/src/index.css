@@ -1,4 +1,10 @@
 @import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 400px;
+ 
+}
+
 body {
   background-color: #101319;
   overflow-x: hidden;

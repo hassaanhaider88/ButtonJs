@@ -1,14 +1,14 @@
 import { useGlobalState } from "@hmk_codeweb88/useglobalstate";
 import React, { useState } from "react";
 import { FaUser, FaWhatsapp } from "react-icons/fa";
-import { GoSignOut } from "react-icons/go";
+
 import { MdCreate, MdFeedback, MdSettings } from "react-icons/md";
 import { PiSignOutFill } from "react-icons/pi";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import ModelSignOutConfirm from "./ModelSignOutConfirm";
 
-
-const UserProfile = ({ IsModbile }) => {
+const UserProfile = () => {
+  var location = useLocation().pathname;
   const [ShowProfileOptions, setShowProfileOptions] = useState(false);
   const [IsCountinue, setIsCountinue] = useState(false);
   const [IsCencel, setIsCencel] = useState(false);
@@ -25,7 +25,11 @@ const UserProfile = ({ IsModbile }) => {
   );
 
   var ProfileOptions = [
-    { label: "Your Profile", icon: <FaUser />, RedirectUri: "/profile" },
+    {
+      label: "Your Profile",
+      icon: <FaUser />,
+      RedirectUri: `/profile/${LoginUser?._id}`,
+    },
     { label: "Your Creations", icon: <MdCreate />, RedirectUri: "/create-new" },
     { label: "Settings", icon: <MdSettings />, RedirectUri: "/settings" },
     { label: "Give Feedback", icon: <MdFeedback />, RedirectUri: "/feedback" },
@@ -52,7 +56,11 @@ const UserProfile = ({ IsModbile }) => {
   return (
     <div className="relative  flex items-center gap-2 cursor-pointer">
       <div
-        onClick={() => setShowProfileOptions(!ShowProfileOptions)}
+        onClick={() =>
+          location === "/create-new"
+            ? setShowProfileOptions(false)
+            : setShowProfileOptions(!ShowProfileOptions)
+        }
         className="w-10 h-10 rounded-full border-2 border-[#4] flex justify-center items-center cursor-pointer"
       >
         <img
@@ -63,22 +71,26 @@ const UserProfile = ({ IsModbile }) => {
       </div>
       {ShowProfileOptions && (
         <div className=" right-0 bottom-10 md:top-12 md:-right-4 flex absolute  flex-col w-[220px]  rounded-[5px]">
-          {ProfileOptions.map((item, idx) => (
-            <button
-              onClick={() => handleProfileOptionsClick(item)}
-              key={idx}
-              className={` ${
-                idx === 4
-                  ? "bg-green-500 hover:bg-[#72e45b]"
-                  : "hover:bg-[#21262C]"
-              } relative flex items-center gap-2 px-3 py-2 text-white text-sm rounded-[4px] outline-none`}
-            >
-              <span className="absolute left-[-10px] top-[5px] h-[80%] w-[5px] rounded bg-[#2F81F7] opacity-0 focus:opacity-100 active:opacity-100 transition-opacity duration-150" />
+          <div className="bg-[#121212] z-50 flex flex-col justify-start items-start rounded-2xl">
+            {ProfileOptions.map((item, idx) => (
+              <button
+                onClick={() => handleProfileOptionsClick(item)}
+                key={idx}
+                className={` ${
+                  idx === 4
+                    ? "bg-green-500  hover:bg-[#72e45b]"
+                    : "hover:bg-[#21262C]"
+                }
+                
+                relative flex w-full items-center gap-2 px-3 py-2 text-white text-sm rounded-[4px] outline-none`}
+              >
+                <span className="absolute left-[-10px] top-[5px] h-[80%] w-[5px] rounded bg-[#2F81F7] opacity-0 focus:opacity-100 active:opacity-100 transition-opacity duration-150" />
 
-              <span className="w-[15px]">{item.icon}</span>
-              <span>{item.label}</span>
-            </button>
-          ))}
+                <span className="w-[15px]">{item.icon}</span>
+                <span>{item.label}</span>
+              </button>
+            ))}
+          </div>
         </div>
       )}
       {ShowSignOutModal && (
@@ -93,6 +105,5 @@ const UserProfile = ({ IsModbile }) => {
     </div>
   );
 };
-
 
 export default UserProfile;

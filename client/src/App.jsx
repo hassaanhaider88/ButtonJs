@@ -11,9 +11,9 @@ import Donate from "./Pages/Donate";
 import Contact from "./Pages/Contact";
 import AboutUs from "./Pages/AboutUs";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
-import UserProfile from "./Components/UserProfile";
 import Settings from "./Pages/Settings";
 import FeedBack from "./Pages/FeedBack";
+import UserProfilePage from "./Pages/UserProfile";
 
 const App = () => {
   return (
@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/all-elements" element={<AllElements />} />
         <Route path="/create-new" element={<CreateNew />} />
-        <Route path="/profile" element={<UserProfile />} />
+        <Route path="/profile/:id" element={<UserProfilePage />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/feedback" element={<FeedBack />} />
 
