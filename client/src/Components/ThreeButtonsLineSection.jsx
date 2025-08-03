@@ -26,7 +26,6 @@ const ThreeButtonsLineSection = () => {
 };
 
 const SingleLineButtons = ({ Move ,ButtonToBeRendered }) => {
-  console.log(ButtonToBeRendered,'ButtonToBeRendered',Move)
   return (
     <div style={{ left: Move }} className="flex relative gap-4 items-center">
       {ButtonToBeRendered.map((button, idx) => {

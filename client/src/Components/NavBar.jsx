@@ -37,12 +37,12 @@ const NavBar = () => {
         coverImg: "",
         createdButtons: [],
         Blogs: [],
-        location: "pakistan",
-        companyName: "HMK CodeWeb",
-        GitHubProfileURL: "https://github.com/hassaanhaider88",
-        userWebsite: "hassaan-haider.netlify.app",
+        location: "",
+        companyName: "",
+        GitHubProfileURL: "",
+        userWebsite: "",
         BioInfo:
-          "I am a skilled Front-End Developer with expertise in React.js and Next.js, crafting seamless and dynamic user interfaces. Proficient in the MERN stack (MongoDB, Express.js, React, Node.js), I excel in building full-stack applications. With a strong command of Git and GitHub, I ensure efficient version control and collaboration.",
+          "",
       };
 
       if (userInfo) {

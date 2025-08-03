@@ -8,7 +8,6 @@ const TopCreator = ({ From, To }) => {
   useEffect(() => {
     setCreatorData(TopCreatorData.slice(From, To));
   }, []);
-  console.log(CreatorData);
   return (
     <div className="w-full mt-4 flex">
       {CreatorData.map((creator, idx) => {

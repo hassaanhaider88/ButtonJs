@@ -13,13 +13,15 @@ import MarqueeLine from "../Components/MarqueeLine";
 import BlogPostCom from "../Components/BlogPostCom";
 import TopCreator from "../Components/TopCreator";
 import Marquee from "react-fast-marquee";
+import { useGlobalState } from "@hmk_codeweb88/useglobalstate";
 
 const Home = () => {
   const [SearchVal, setSearchVal] = useState("");
+const [IsLogin] = useGlobalState("IsLogin");
+  console.log(IsLogin)
   const handleSearch = (e) => {
     e.preventDefault();
     toast.success("Sucessfull search", SearchVal);
-    console.log(SearchVal);
   };
 
   const handleWhatsAppJoin = () => {

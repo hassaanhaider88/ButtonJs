@@ -14,8 +14,11 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import Settings from "./Pages/Settings";
 import FeedBack from "./Pages/FeedBack";
 import UserProfilePage from "./Pages/UserProfile";
+import { useGlobalState } from "@hmk_codeweb88/useglobalstate";
 
 const App = () => {
+  const [IsLogin] = useGlobalState("IsLogin");
+  console.log(IsLogin);
   return (
     <>
       <NavBar />
@@ -24,8 +27,8 @@ const App = () => {
         <Route path="/all-elements" element={<AllElements />} />
         <Route path="/create-new" element={<CreateNew />} />
         <Route path="/profile/:id" element={<UserProfilePage />} />
-        <Route path="/settings" element={<Settings />} />
-        <Route path="/feedback" element={<FeedBack />} />
+        <Route path="/settings" element={IsLogin ? <Settings /> : <Home />} />
+        <Route path="/feedback" element={IsLogin ? <FeedBack /> : <Home />} />
 
         <Route path="/donate" element={<Donate />} />
         <Route path="/contact" element={<Contact />} />

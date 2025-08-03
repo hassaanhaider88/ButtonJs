@@ -9,7 +9,6 @@ const SingleButtonOnUserProfile = ({
   buttonData,
   IsLoginAndProfileViewerSame,
 }) => {
-  console.log(IsLoginAndProfileViewerSame)
   const handleCopyCodeClick = () => {
     navigator.clipboard.writeText(buttonData.ReactTailwindCode);
     toast.success("Code copied to clipboard");
