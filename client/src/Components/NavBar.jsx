@@ -41,8 +41,7 @@ const NavBar = () => {
         companyName: "",
         GitHubProfileURL: "",
         userWebsite: "",
-        BioInfo:
-          "",
+        BioInfo: "",
       };
 
       if (userInfo) {
@@ -77,20 +76,20 @@ const NavBar = () => {
               All Elements
             </span>
           </Link>
-          <Link to={"/contact"} className="relative overflow-hidden h-6 group">
-            <span className="block group-hover:-translate-y-full transition-transform duration-300">
-              Contact Us
-            </span>
-            <span className="block absolute top-full left-0 group-hover:translate-y-[-100%] transition-transform duration-300">
-              Contact Us
-            </span>
-          </Link>
           <Link to={"/donate"} className="relative overflow-hidden h-6 group">
             <span className="block group-hover:-translate-y-full transition-transform duration-300">
               Donate
             </span>
             <span className="block absolute top-full left-0 group-hover:translate-y-[-100%] transition-transform duration-300">
               Donate
+            </span>
+          </Link>
+          <Link to={"/blogs"} className="relative overflow-hidden h-6 group">
+            <span className="block group-hover:-translate-y-full transition-transform duration-300">
+              Blog
+            </span>
+            <span className="block absolute top-full left-0 group-hover:translate-y-[-100%] transition-transform duration-300">
+              Blog
             </span>
           </Link>
           <Link to={"/docs"} className="relative overflow-hidden h-6 group">
@@ -138,8 +137,8 @@ const NavBar = () => {
           <Link className="hover:text-indigo-600" to={"/all-elements?page=1"}>
             All Elements
           </Link>
-          <Link className="hover:text-indigo-600" to={"/contact"}>
-            Contact Us
+          <Link className="hover:text-indigo-600" to={"/blogs"}>
+            Blog
           </Link>
           <Link className="hover:text-indigo-600" to={"/donate"}>
             Donate

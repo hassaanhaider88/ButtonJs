@@ -8,6 +8,7 @@ import ViewCode from "./Pages/ViewCode";
 import CreateNew from "./Pages/CreateNew";
 import Docs from "./Pages/Docs";
 import Donate from "./Pages/Donate";
+import Blogs from "./Pages/Blogs";
 import Contact from "./Pages/Contact";
 import AboutUs from "./Pages/AboutUs";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
@@ -15,6 +16,7 @@ import Settings from "./Pages/Settings";
 import FeedBack from "./Pages/FeedBack";
 import UserProfilePage from "./Pages/UserProfile";
 import { useGlobalState } from "@hmk_codeweb88/useglobalstate";
+import SingleBlog from "./Pages/SingleBlog";
 
 const App = () => {
   const [IsLogin] = useGlobalState("IsLogin");
@@ -33,6 +35,8 @@ const App = () => {
         <Route path="/donate" element={<Donate />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/blogs" element={<Blogs/>}/>
+        <Route path="/blog/:id" element={<SingleBlog/>}/>
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
         <Route path="/view-code/:id" element={<ViewCode />} />
