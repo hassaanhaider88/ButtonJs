@@ -5,6 +5,8 @@ import { GrFormView } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import JsxParser from "react-jsx-parser";
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
+
 
 const SingleButtonOnHome = ({ buttonData }) => {
   const handleCopyCodeClick = () => {
@@ -29,7 +31,11 @@ const SingleButtonOnHome = ({ buttonData }) => {
       </div>
       <div className="card__content absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         {/* this button code will be dynamic  */}
-        <JsxParser jsx={buttonData.ReactTailwindCode} />
+        {/* <JsxParser jsx={buttonData.ReactTailwindCode} /> */}
+             <LiveProvider code={buttonData.ReactTailwindCode}>
+                    <LiveError />
+                    <LivePreview />
+                  </LiveProvider>
       </div>
       <div
         id="CopyCodeButton"

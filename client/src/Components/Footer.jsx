@@ -2,7 +2,7 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { BiLogoNetlify } from "react-icons/bi";
 import { RiWhatsappFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import { useGlobalState } from "@hmk_codeweb88/useglobalstate";
+import { useGlobalState } from "../lib/useGlobalState";
 import { useState } from "react";
 import {toast} from 'react-toastify'
 

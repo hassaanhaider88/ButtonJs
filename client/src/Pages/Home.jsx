@@ -13,7 +13,7 @@ import MarqueeLine from "../Components/MarqueeLine";
 import BlogPostCom from "../Components/BlogPostCom";
 import TopCreator from "../Components/TopCreator";
 import Marquee from "react-fast-marquee";
-import { useGlobalState } from "@hmk_codeweb88/useglobalstate";
+import { useGlobalState } from "../lib/useGlobalState";
 
 const Home = () => {
   const [SearchVal, setSearchVal] = useState("");

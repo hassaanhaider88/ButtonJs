@@ -6,7 +6,6 @@ const Blogs = () => {
     <section className="w-screen min-h-screen px-5 md:px-12 lg:px-20 py-10 text-white">
       <div
         style={{
-          background: "#00192b",
           background:
             "radial-gradient(circle, rgba(0, 25, 43, 1) 0%, rgba(0, 25, 43, 0.94) 0%, rgba(0, 0, 0, 1) 100%, rgba(72, 202, 228, 0.79) 100%)",
         }}

@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@babel/standalone": "^7.28.2",
+    "@codesandbox/sandpack-react": "^2.20.0",
+    "@codesandbox/sandpack-themes": "^2.0.21",
     "@hmk_codeweb88/useglobalstate": "^1.1.1",
     "@monaco-editor/react": "^4.7.0",
     "@tailwindcss/vite": "^4.1.11",
@@ -19,6 +22,7 @@
     "react-fast-marquee": "^1.6.5",
     "react-icons": "^5.5.0",
     "react-jsx-parser": "^2.4.0",
+    "react-live": "^4.1.8",
     "react-router-dom": "^7.7.1",
     "react-toastify": "^11.0.5",
     "tailwindcss": "^4.1.11"

@@ -213,38 +213,6 @@ var ButtonData = [
     isPremium: false,
   },
   {
-    _id: "btn008outlinebtnpqr09876",
-    buttonCategory: "Outline",
-    DeploymentStage: "Live",
-    ReactTailwindCode: `<button
-      className="relative w-[6.5em] h-[2.3em] m-[0.5em] text-[20px] font-bold rounded-[0.625em] border-none overflow-hidden z-[1] transition-colors duration-500"
-      style={{
-        background: hover ? 'white' : 'black',
-        color: hover ? 'black' : 'white',
-        cursor: 'pointer',
-      }}
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-    >
-      Button
-      <span
-        className="absolute top-0 bottom-0 left-[-20%] right-[-20%] -z-[1] transition-transform duration-500"
-        style={{
-          background: 'white',
-          transform: hover
-            ? 'skewX(-45deg) scale(1, 1)'
-            : 'skewX(-45deg) scale(0, 1)',
-        }}
-      />
-    </button>
-
-    `,
-    NumberOfViews: "720",
-    NumbersOfCopyCode: "310",
-    createdOn: "2025-07-28T14:20:00.000+00:00",
-    isPremium: false,
-  },
-  {
     _id: "btn009outlinebtnpqr09876",
     DeploymentStage: "Live",
     buttonCategory: "Outline",
@@ -427,87 +395,22 @@ var ButtonData = [
     buttonCategory: "Outline",
     DeploymentStage: "Live",
     ReactTailwindCode: `<button
-  className="relative cursor-pointer text-[13px] rounded-[16px] border-0 p-[2px] bg-[radial-gradient(circle_80px_at_80%_-10%,_#ffffff,_#181b1b)]"
-  style={{
-    position: 'relative',
-  }}
+  className="cursor-pointer bg-gradient-to-b from-indigo-500 to-indigo-600 shadow-[0px_4px_32px_0_rgba(99,102,241,.70)] px-6 py-3 rounded-xl border-[1px] border-slate-500 text-white font-medium group"
 >
-  <div
-    style={{
-      content: '""',
-      position: 'absolute',
-      width: '65%',
-      height: '60%',
-      borderRadius: '120px',
-      top: 0,
-      right: 0,
-      boxShadow: '0 0 20px #ffffff38',
-      zIndex: -1,
-    }}
-  />
-  <div
-    style={{
-      position: 'absolute',
-      width: '70px',
-      height: '100%',
-      borderRadius: '16px',
-      bottom: 0,
-      left: 0,
-      background: 'radial-gradient(circle 60px at 0% 100%, #3fe9ff, #0000ff80, transparent)',
-      boxShadow: '-10px 10px 30px #0051ff2d',
-    }}
-  />
-  <div
-    className="relative px-[25px] py-[14px] rounded-[14px] text-white z-[3] bg-[radial-gradient(circle_80px_at_80%_-50%,_#777777,_#0f1111)]"
-  >
-    <span
-      style={{
-        content: '""',
-        position: 'absolute',
-        width: '100%',
-        height: '100%',
-        left: 0,
-        top: 0,
-        borderRadius: '14px',
-        background: 'radial-gradient(circle 60px at 0% 100%, #00e1ff1a, #0000ff11, transparent)',
-        zIndex: 0,
-      }}
-    />
-    HMK CodeWeb
+  <div className="relative overflow-hidden">
+    <p
+      className="group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]"
+    >
+      Button
+    </p>
+    <p
+      className="absolute top-7 left-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]"
+    >
+      Button
+    </p>
   </div>
 </button>
 
-    `,
-    NumberOfViews: "720",
-    NumbersOfCopyCode: "310",
-    createdOn: "2025-07-28T14:20:00.000+00:00",
-    isPremium: false,
-  },
-  {
-    _id: "btn008outlinebtnpqr09876",
-    buttonCategory: "Outline",
-    DeploymentStage: "Live",
-    ReactTailwindCode: `<button
-      className="relative w-[6.5em] h-[2.3em] m-[0.5em] text-[20px] font-bold rounded-[0.625em] border-none overflow-hidden z-[1] transition-colors duration-500"
-      style={{
-        background: hover ? 'white' : 'black',
-        color: hover ? 'black' : 'white',
-        cursor: 'pointer',
-      }}
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-    >
-      Button
-      <span
-        className="absolute top-0 bottom-0 left-[-20%] right-[-20%] -z-[1] transition-transform duration-500"
-        style={{
-          background: 'white',
-          transform: hover
-            ? 'skewX(-45deg) scale(1, 1)'
-            : 'skewX(-45deg) scale(0, 1)',
-        }}
-      />
-    </button>
 
     `,
     NumberOfViews: "720",
@@ -516,24 +419,19 @@ var ButtonData = [
     isPremium: false,
   },
   {
-    _id: "btn009outlinebtnpqr09876",
+    _id: "btn009outlinebtnpqr0987688",
     buttonCategory: "Outline",
     DeploymentStage: "Live",
-    ReactTailwindCode: `<div className="relative bg-white text-black px-[15px] py-[15px] m-[10px] rounded-[10px] w-[150px] h-[50px] text-[17px] flex flex-col justify-center items-center shadow-md cursor-pointer transition-all duration-300 group">
-      
-      {/* Tooltip */}
-      <span className="absolute top-0 opacity-0 group-hover:top-[-45px] group-hover:opacity-100 pointer-events-none transition-all duration-300 text-[14px] px-[8px] py-[5px] rounded-[5px] shadow-md bg-white text-white group-hover:bg-gradient-to-br from-blue-900 to-blue-600 z-10">
-        ButtonJS
-        {/* Tooltip arrow (simulated ::before) */}
-        <span className="absolute w-[8px] h-[8px] bg-white group-hover:bg-gradient-to-br from-blue-900 to-blue-600 bottom-[-3px] left-1/2 -translate-x-1/2 rotate-45 transition-all duration-300"></span>
-      </span>
-
-      {/* Main Button Text */}
-      <span className="transition-all duration-300 px-2 py-1 rounded-md">
-        Tooltip
-      </span>
-    </div>
-
+    ReactTailwindCode: `<div className="group relative">
+  <button>
+    <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none" viewBox="0 0 24 24" className="w-8 hover:scale-125 duration-200 hover:stroke-blue-500"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+  </button>
+  <span className="absolute -top-14 left-[50%] -translate-x-[50%] 
+  z-20 origin-left scale-0 px-3 rounded-lg border text-black 
+  border-gray-300 bg-white py-2 text-sm font-bold
+  shadow-md transition-all duration-300 ease-in-out 
+  group-hover:scale-100">GitHub<span>
+    </span></span></div>
     `,
     NumberOfViews: "720",
     NumbersOfCopyCode: "310",

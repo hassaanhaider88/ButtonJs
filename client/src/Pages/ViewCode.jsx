@@ -7,9 +7,11 @@ import { IoMdEye } from "react-icons/io";
 import { IoLogoReact } from "react-icons/io5";
 import { FaClipboard, FaCheck } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
-import { useGlobalState } from "@hmk_codeweb88/useglobalstate";
+import { useGlobalState } from "../lib/useGlobalState";
 import { toast } from "react-toastify";
 import ButtonData from "../Data/ButtonsData";
+import { LiveProvider, LivePreview, LiveError } from "react-live";
+import * as ReactIcons from "react-icons/fa";
 
 const ViewCode = () => {
   var navigate = useNavigate();
@@ -38,6 +40,11 @@ const ViewCode = () => {
 
   const handleEditorChange = (value) => {
     setReactTailCode(value || "");
+  };
+
+  const scope = {
+    React,
+    ...ReactIcons, // so that user JSX can use icons if needed
   };
 
   return (
@@ -79,7 +86,10 @@ const ViewCode = () => {
               <div className="absolute w-[60px] h-[60px] bg-white -top-[52px] -left-[52px] rotate-45 z-10 transition-all duration-300 peer-checked:left-[-10px] peer-checked:top-[-10px]" />
             </label>
           </span>
-          <JsxParser jsx={ReactTailCode} />
+          <LiveProvider code={ReactTailCode} scope={{React}}>
+            <LivePreview className="w-full h-full p-4 flex justify-center items-center" />
+            <LiveError className="text-red-500 text-sm" />
+          </LiveProvider>
         </div>
         <div className="w-full z-[100] relative md:w-1/2 rounded-4xl h-[70vh]">
           <span className="absolute py-2 px-2 z-50 rounded-3xl right-3 bottom-3">
@@ -119,7 +129,7 @@ const ViewCode = () => {
               renderLineHighlight: "line",
               selectOnLineNumbers: true,
               roundedSelection: false,
-              readOnly: false,
+              readOnly: true,
               cursorStyle: "line",
               suggestOnTriggerCharacters: true,
               acceptSuggestionOnEnter: "on",

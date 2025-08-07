@@ -5,42 +5,30 @@ import Home from "./Pages/Home";
 import AllElements from "./Pages/AllElements";
 import Footer from "./Components/Footer";
 import ViewCode from "./Pages/ViewCode";
-import CreateNew from "./Pages/CreateNew";
-import Docs from "./Pages/Docs";
 import Donate from "./Pages/Donate";
 import Blogs from "./Pages/Blogs";
 import Contact from "./Pages/Contact";
 import AboutUs from "./Pages/AboutUs";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
-import Settings from "./Pages/Settings";
-import FeedBack from "./Pages/FeedBack";
-import UserProfilePage from "./Pages/UserProfile";
-import { useGlobalState } from "@hmk_codeweb88/useglobalstate";
-import SingleBlog from "./Pages/SingleBlog";
+
+import { useGlobalState } from "./lib/useGlobalState";
 
 const App = () => {
   const [IsLogin] = useGlobalState("IsLogin");
-  console.log(IsLogin);
   return (
     <>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/all-elements" element={<AllElements />} />
-        <Route path="/create-new" element={<CreateNew />} />
-        <Route path="/profile/:id" element={<UserProfilePage />} />
-        <Route path="/settings" element={IsLogin ? <Settings /> : <Home />} />
-        <Route path="/feedback" element={IsLogin ? <FeedBack /> : <Home />} />
 
         <Route path="/donate" element={<Donate />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/blogs" element={<Blogs/>}/>
-        <Route path="/blog/:id" element={<SingleBlog/>}/>
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
         <Route path="/view-code/:id" element={<ViewCode />} />
-        <Route path="/docs" element={<Docs />} />
       </Routes>
 
       <Footer />

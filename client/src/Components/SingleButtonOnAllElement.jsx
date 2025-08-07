@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import JsxParser from "react-jsx-parser";
 import { IoMdEye } from "react-icons/io";
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 
 const SingleButtonOnAllElement = ({ buttonData }) => {
   const handleCopyCodeClick = () => {
@@ -19,7 +20,10 @@ const SingleButtonOnAllElement = ({ buttonData }) => {
     <div className="py-5">
       <div className="w-[350px] group cursor-pointer overflow-hidden relative h-[404px] mx-auto bg-[#5c5c5e31] rounded-[30px] z-[1] ">
         <div className="card__content absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-          <JsxParser jsx={buttonData.ReactTailwindCode} />
+          <LiveProvider code={buttonData.ReactTailwindCode}>
+            <LiveError />
+            <LivePreview />
+          </LiveProvider>
         </div>
 
         <div
