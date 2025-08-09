@@ -69,7 +69,6 @@ var ButtonData = [
     NumbersOfCopyCode: "540",
     createdOn: "2025-07-28T10:30:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber04",
     buttonCategory: "Glowing ButtonJs",
@@ -113,7 +112,6 @@ var ButtonData = [
     NumbersOfCopyCode: "260",
     createdOn: "2025-07-27T18:40:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber05",
     buttonCategory: "Click able ButtonJS",
@@ -133,7 +131,6 @@ var ButtonData = [
     NumbersOfCopyCode: "180",
     createdOn: "2025-07-25T12:00:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber06",
     buttonCategory: "Outline",
@@ -146,7 +143,6 @@ var ButtonData = [
     NumbersOfCopyCode: "310",
     createdOn: "2025-07-28T14:20:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber07",
     buttonCategory: "Hover Effect",
@@ -208,7 +204,6 @@ var ButtonData = [
     NumbersOfCopyCode: "310",
     createdOn: "2025-07-28T14:20:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber08",
     buttonCategory: "Color Border ",
@@ -429,7 +424,6 @@ var ButtonData = [
     NumbersOfCopyCode: "340",
     createdOn: "2025-07-28T09:10:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber12",
     buttonCategory: "WelCome To Sahara",
@@ -499,7 +493,6 @@ var ButtonData = [
     NumbersOfCopyCode: "260",
     createdOn: "2025-07-27T18:40:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber14",
     buttonCategory: "Rainbow Github ButtonJS",
@@ -539,7 +532,6 @@ var ButtonData = [
     NumbersOfCopyCode: "180",
     createdOn: "2025-07-25T12:00:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber15",
     buttonCategory: "Hover Buttons",
@@ -555,7 +547,6 @@ var ButtonData = [
     NumbersOfCopyCode: "310",
     createdOn: "2025-07-28T14:20:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber16",
     buttonCategory: "3D ButtonJS",
@@ -571,7 +562,6 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
     NumbersOfCopyCode: "310",
     createdOn: "2025-07-28T14:20:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber17",
     buttonCategory: "3D Hover Effect",
@@ -662,7 +652,6 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
     NumbersOfCopyCode: "0",
     createdOn: "2025-08-08T10:15:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber19",
     buttonCategory: "Rolling Text Hover Effect",
@@ -688,7 +677,6 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
     NumbersOfCopyCode: "310",
     createdOn: "2025-07-28T14:20:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber20",
     buttonCategory: "Corner Folded Button",
@@ -723,7 +711,6 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
     NumbersOfCopyCode: "310",
     createdOn: "2025-07-28T14:20:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber21",
     buttonCategory: "Social Media Icons",
@@ -755,7 +742,6 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
     NumbersOfCopyCode: "310",
     createdOn: "2025-07-28T14:20:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber22",
     buttonCategory: "Hover Shadow",
@@ -775,7 +761,6 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
     NumbersOfCopyCode: "310",
     createdOn: "2025-07-28T14:20:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber23",
     buttonCategory: "3D Hover Effect",
@@ -789,7 +774,6 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
     NumbersOfCopyCode: "310",
     createdOn: "2025-07-28T14:20:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber24",
     buttonCategory: "3D Hover Effect",
@@ -828,7 +812,6 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
     NumbersOfCopyCode: "310",
     createdOn: "2025-07-28T14:20:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber25",
     buttonCategory: "Notification Button",
@@ -883,7 +866,6 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
     NumbersOfCopyCode: "310",
     createdOn: "2025-07-28T14:20:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber26",
     buttonCategory: "Sign With Google",
@@ -930,7 +912,6 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
     NumbersOfCopyCode: "310",
     createdOn: "2025-07-28T14:20:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber27",
     buttonCategory: "3D Hover Effect",
@@ -965,7 +946,6 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
     NumbersOfCopyCode: "310",
     createdOn: "2025-07-28T14:20:00.000+00:00",
   },
-
   {
     _id: "ButtonJsByHMKCodeWebNumber28",
     buttonCategory: "Rainy Hover Botton",
@@ -1068,7 +1048,6 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
     NumbersOfCopyCode: "310",
     createdOn: "2025-07-28T14:20:00.000+00:00",
   },
-
   {
   _id: "ButtonJsByHMKCodeWebNumber29",
   buttonCategory: "Gradient Glow Button",
@@ -1116,10 +1095,9 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
   NumberOfViews: "0",
   NumbersOfCopyCode: "0",
   createdOn: "2025-08-08T15:10:00.000+00:00",
-}
-,
+},
   {
-    _id: "ButtonJsByHMKCodeWebNumber29",
+    _id: "ButtonJsByHMKCodeWebNumber30",
     buttonCategory: "Underline On Hover",
 
     ReactTailwindCode: `<button className="bg-red-950 text-red-400 border border-red-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
@@ -1177,32 +1155,350 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
     NumbersOfCopyCode: "310",
     createdOn: "2025-07-28T14:20:00.000+00:00",
   },
-
   {
-    _id: "ButtonJsByHMKCodeWebNumber17",
-    buttonCategory: "3D Hover Effect",
+    _id: "ButtonJsByHMKCodeWebNumber31",
+    buttonCategory: "Toggle ButtonJS",
 
-    ReactTailwindCode: `<button className="bg-red-950 text-red-400 border border-red-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
-  <span className="bg-red-400 shadow-red-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
-  Hover Me
-</button>`,
+    ReactTailwindCode: `<label
+  className="w-16 h-8 bg-black shadow-inner rounded-full flex justify-around items-center overflow-hidden cursor-pointer outline-2 outline-offset-2"
+>
+  <input className="peer hidden" type="checkbox" />
+  <div
+    className="w-6 h-6 flex justify-center items-center text-white bg-black border-[2px] duration-500 rounded-full peer-checked:translate-y-8"
+  ></div>
+  <div
+    className="w-6 h-6 flex justify-center items-center text-white duration-500 rounded-full -translate-y-8 peer-checked:translate-y-0 rotate-90"
+  >
+    𝝞
+  </div>
+</label>
+`,
     NumberOfViews: "720",
     NumbersOfCopyCode: "310",
     createdOn: "2025-07-28T14:20:00.000+00:00",
   },
-
   {
-    _id: "ButtonJsByHMKCodeWebNumber17",
-    buttonCategory: "3D Hover Effect",
+    _id: "ButtonJsByHMKCodeWebNumber32",
+    buttonCategory: "Trash DustBin",
 
-    ReactTailwindCode: `<button className="bg-red-950 text-red-400 border border-red-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
-  <span className="bg-red-400 shadow-red-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
-  Hover Me
-</button>`,
+    ReactTailwindCode: `<button
+  className="group relative flex h-14 w-14 flex-col items-center justify-center overflow-hidden rounded-xl border-2 border-red-800 bg-red-400 hover:bg-red-600"
+>
+  <svg
+    viewBox="0 0 1.625 1.625"
+    className="absolute -top-7 fill-white delay-100 group-hover:top-6 group-hover:animate-[spin_1.4s] group-hover:duration-1000"
+    height="15"
+    width="15"
+  >
+    <path
+      d="M.471 1.024v-.52a.1.1 0 0 0-.098.098v.618c0 .054.044.098.098.098h.487a.1.1 0 0 0 .098-.099h-.39c-.107 0-.195 0-.195-.195"
+    ></path>
+    <path
+      d="M1.219.601h-.163A.1.1 0 0 1 .959.504V.341A.033.033 0 0 0 .926.309h-.26a.1.1 0 0 0-.098.098v.618c0 .054.044.098.098.098h.487a.1.1 0 0 0 .098-.099v-.39a.033.033 0 0 0-.032-.033"
+    ></path>
+    <path
+      d="m1.245.465-.15-.15a.02.02 0 0 0-.016-.006.023.023 0 0 0-.023.022v.108c0 .036.029.065.065.065h.107a.023.023 0 0 0 .023-.023.02.02 0 0 0-.007-.016"
+    ></path>
+  </svg>
+  <svg
+    width="16"
+    fill="none"
+    viewBox="0 0 39 7"
+    className="origin-right duration-500 group-hover:rotate-90"
+  >
+    <line stroke-width="4" stroke="white" y2="5" x2="39" y1="5"></line>
+    <line
+      stroke-width="3"
+      stroke="white"
+      y2="1.5"
+      x2="26.0357"
+      y1="1.5"
+      x1="12"
+    ></line>
+  </svg>
+  <svg width="16" fill="none" viewBox="0 0 33 39" className="">
+    <mask fill="white" id="path-1-inside-1_8_19">
+      <path
+        d="M0 0H33V35C33 37.2091 31.2091 39 29 39H4C1.79086 39 0 37.2091 0 35V0Z"
+      ></path>
+    </mask>
+    <path
+      mask="url(#path-1-inside-1_8_19)"
+      fill="white"
+      d="M0 0H33H0ZM37 35C37 39.4183 33.4183 43 29 43H4C-0.418278 43 -4 39.4183 -4 35H4H29H37ZM4 43C-0.418278 43 -4 39.4183 -4 35V0H4V35V43ZM37 0V35C37 39.4183 33.4183 43 29 43V35V0H37Z"
+    ></path>
+    <path stroke-width="4" stroke="white" d="M12 6L12 29"></path>
+    <path stroke-width="4" stroke="white" d="M21 6V29"></path>
+  </svg>
+</button>
+`,
     NumberOfViews: "720",
     NumbersOfCopyCode: "310",
     createdOn: "2025-07-28T14:20:00.000+00:00",
   },
+  {
+    _id: "ButtonJsByHMKCodeWebNumber33",
+    buttonCategory: "Pixal Art",
+
+    ReactTailwindCode: `<button className="group cursor-pointer relative w-[120px] h-[60px] bg-[linear-gradient(144deg,_#af40ff,_#5b42f3_50%,_#00ddeb)] text-white whitespace-nowrap flex flex-wrap rounded-lg overflow-hidden">
+  <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none">Pixel Art</span>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[0.5s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[2s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[3.5s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[1.9s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[3.45s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[3.6s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[3.65s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[0.15s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[3.55s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[1.85s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[3.4s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[0.55s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[3.25s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[3.35s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[3.3s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[0.05s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:blur-none group-focus:delay-[3.05s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[3.15s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[1.75s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:blur-none group-focus:delay-[3.2s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[3.1s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[1.8s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[2.9s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent delay-0"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[2.05s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[1.15s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[3s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[2.85s]"></div>
+  <div className="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:blur-none group-focus:delay-[0.6s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[2.1s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[0.3s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:blur-none group-focus:delay-[1.6s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[1.7s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[0.9s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[2.75s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[1.2s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[2.8s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[0.1s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:blur-none group-focus:delay-[2.7s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[1.55s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[2.15s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[0.65s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[2.65s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[0.45s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[1.1s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:blur-none group-focus:delay-[0.85s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[0.7s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[1.5s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[1.25s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[1.65s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[0.25s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:blur-none group-focus:delay-[2.6s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:blur-none group-focus:delay-[2.2s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:blur-none group-focus:delay-[1.45s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:blur-none group-focus:delay-[2.55s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:blur-none group-focus:delay-[0.2s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:blur-none group-focus:delay-[1s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[2.25s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[0.35s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[2.45s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[2.5s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[0.8s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[1.3s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[2.3s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[1.4s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[2.4s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[0.75s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[1.05s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[1s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[2.35s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[0.4s]"></div>
+  <div class="w-[10px] h-[10px] blur-[5px] bg-[rgb(30,41,59)] delay-[0.2s] duration-[0.4s] hover:bg-transparent hover:delay-0 hover:duration-0 group-focus:bg-transparent group-focus:delay-[1.35s]"></div>
+</button>
+`,
+    NumberOfViews: "720",
+    NumbersOfCopyCode: "310",
+    createdOn: "2025-07-28T14:20:00.000+00:00",
+  }, 
+  {
+    _id: "ButtonJsByHMKCodeWebNumber34",
+    buttonCategory: "Check Out ButtonJs",
+
+    ReactTailwindCode: `<label className="text-lg text-white cursor-pointer select-none flex items-center">
+      <input
+        type="checkbox"
+        className="appearance-none w-5 h-5 border-2 border-[#30cfd0] rounded-md bg-transparent inline-block relative mr-2 cursor-pointer
+          before:content-[''] before:bg-[#30cfd0] before:block before:absolute before:top-1/2 before:left-1/2 before:translate-x-[-50%] before:translate-y-[-50%]
+          before:w-2.5 before:h-2.5 before:rounded-sm before:scale-0 before:transition-transform before:duration-300 before:ease-in-out
+          checked:before:scale-100"
+      />
+      Check me
+    </label>
+`,
+    NumberOfViews: "720",
+    NumbersOfCopyCode: "310",
+    createdOn: "2025-07-28T14:20:00.000+00:00",
+  },
+  {
+    _id: "ButtonJsByHMKCodeWebNumber35",
+    buttonCategory: "Toggle ButtonJS",
+
+    ReactTailwindCode: `  <label className="relative inline-block w-[3.5em] h-[2em]">
+      <input type="checkbox" className="opacity-0 w-0 h-0 peer" />
+      <span
+        className="absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-gray-300 rounded-[30px] transition duration-400 
+        peer-checked:bg-blue-500 peer-focus:shadow-[0_0_1px_#2196f3] 
+        before:content-[''] before:absolute before:h-[1.4em] before:w-[1.4em] before:rounded-[20px] before:left-[0.3em] before:bottom-[0.3em]
+        before:bg-white before:transition-all before:duration-400 peer-checked:before:translate-x-[1.5em]"
+      ></span>
+    </label>
+`,
+    NumberOfViews: "720",
+    NumbersOfCopyCode: "310",
+    createdOn: "2025-07-28T14:20:00.000+00:00",
+  },
+  {
+    _id: "ButtonJsByHMKCodeWebNumber36",
+    buttonCategory: "ButtonJS",
+
+    ReactTailwindCode: ` <div className="relative group  flex items-center justify-center w-[140px] h-[60px] rounded-[30px] bg-black/5 shadow-[1px_1px_2px_0_#fffd,2px_2px_2px_#0001_inset,2px_2px_4px_#0001_inset,2px_2px_8px_#0001_inset] transition-shadow perspective-[150px] select-none z-[1]">
+      <button className="flex items-center justify-start gap-1 text-left px-[calc(6px*4)] pr-[60px] w-[calc(100%-12px)] h-[calc(100%-12px)] rounded-[24px] bg-[linear-gradient(#fff2,#0001),#202020]   shadow-[1px_1px_2px_-1px_#fff_inset,0_2px_1px_#0001,0_4px_2px_#0001,0_8px_4px_#0001,0_16px_8px_#0001,0_32px_16px_#0001] transition-all duration-300 ease-[cubic-bezier(0.25,1.5,0.5,2.2)] z-[2] cursor-pointer group">
+        <span className="text-[16px] group-hover:scale-95 duration-200 transition-all font-semibold tracking-[1px] bg-clip-text text-transparent bg-gradient-to-b from-[#fffc] to-[#000a] drop-shadow-[0_1px_0px_#fff8]">
+          Rec
+        </span>
+        <div className="group-hover:animate-pulse opacity-0 group-hover:opacity-100 bg-red-300 w-3 h-3 rounded-full absolute right-5" />
+      </button>
+    </div>
+`,
+    NumberOfViews: "720",
+    NumbersOfCopyCode: "310",
+    createdOn: "2025-07-28T14:20:00.000+00:00",
+  },  
+  {
+    _id: "ButtonJsByHMKCodeWebNumber37",
+    buttonCategory: "Radio Checks",
+
+    ReactTailwindCode: ` <div className="flex items-center justify-center bg-gray-200">
+      <div className="relative flex items-center p-1 scale-80 text-nowrap rounded-lg overflow-hidden shadow-lg">
+        {/* Radio 1 */}
+        <input
+          type="radio"
+          name="tab"
+          id="tab1"
+          className="hidden peer/tab1"
+          defaultChecked
+        />
+        <label
+          htmlFor="tab1"
+          className="px-6 py-2 cursor-pointer text-gray-700 font-medium peer-checked/tab1:text-white relative z-10"
+        >
+          About
+        </label>
+
+        {/* Radio 2 */}
+        <input
+          type="radio"
+          name="tab"
+          id="tab2"
+          className="hidden peer/tab2"
+        />
+        <label
+          htmlFor="tab2"
+          className="px-6 py-2 cursor-pointer text-gray-700 font-medium peer-checked/tab2:text-white relative z-10"
+        >
+          Summary
+        </label>
+
+        {/* Radio 3 */}
+        <input
+          type="radio"
+          name="tab"
+          id="tab3"
+          className="hidden peer/tab3"
+        />
+        <label
+          htmlFor="tab3"
+          className="px-6 py-2 cursor-pointer text-gray-700 font-medium peer-checked/tab3:text-white relative z-10"
+        >
+          Portfolio
+        </label>
+
+        {/* Sliding background */}
+        <div className="absolute top-1 bottom-1 w-[100px] rounded-md bg-gray-800 transition-transform duration-500 peer-checked/tab1:translate-x-0 peer-checked/tab2:translate-x-[100px] peer-checked/tab3:translate-x-[200px]" />
+      </div>
+    </div>
+`,
+    NumberOfViews: "720",
+    NumbersOfCopyCode: "310",
+    createdOn: "2025-07-28T14:20:00.000+00:00",
+  },
+  {
+    _id: "ButtonJsByHMKCodeWebNumber38",
+    buttonCategory: "Burger Menu",
+
+    ReactTailwindCode: `<label className="cursor-pointer group" title="Hamburger Menu">
+  <input type="checkbox" className="hidden" />
+  <svg
+    stroke-width="3"
+    className="block w-8 h-8 fill-none stroke-slate-200 overflow-hidden"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g stroke-width="3.5" className="group-has-[:checked]:block">
+      <path
+        d="M0 16 l32 0"
+        className="origin-center rotate-45 scale-0 group-has-[:checked]:scale-100 transition-transform duration-500 ease-out"
+      ></path>
+      <path
+        d="M0 16 l32 0"
+        className="origin-center -rotate-45 scale-0 group-has-[:checked]:scale-100 transition-transform duration-500 ease-out"
+      ></path>
+    </g>
+    <g
+      className="origin-center group-has-[:checked]:scale-0 transition-transform duration-500 ease-out"
+    >
+      <circle cx="4" cy="4" r="2"></circle>
+      <circle
+        cx="16"
+        cy="4"
+        r="2"
+        className="group-hover:translate-x-3 transition-transform duration-300 ease-out"
+      ></circle>
+      <circle cx="28" cy="4" r="2"></circle>
+
+      <circle
+        cx="4"
+        cy="16"
+        r="2"
+        className="group-hover:-translate-y-3 transition-transform duration-300 ease-out"
+      ></circle>
+      <circle cx="16" cy="16" r="2"></circle>
+      <circle
+        cx="28"
+        cy="16"
+        r="2"
+        className="group-hover:translate-y-3 transition-transform duration-300 ease-out"
+      ></circle>
+
+      <circle cx="4" cy="28" r="2"></circle>
+      <circle
+        cx="16"
+        cy="28"
+        r="2"
+        className="group-hover:-translate-x-3 transition-transform duration-300 ease-out"
+      ></circle>
+      <circle cx="28" cy="28" r="2"></circle>
+    </g>
+  </svg>
+</label>
+
+`,
+    NumberOfViews: "120",
+    NumbersOfCopyCode: "410",
+    createdOn: "2025-08-28T14:20:00.000+00:00",
+  },
+
+
+
 ];
 
 export default ButtonData;
