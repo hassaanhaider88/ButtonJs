@@ -1,14 +1,28 @@
-import React from "react";
 import { IoMdSearch } from "react-icons/io";
 import ButtonData from "../Data/ButtonsData";
 import SingleButtonOnAllElement from "../Components/SingleButtonOnAllElement";
 import { FaArrowRight } from "react-icons/fa6";
 import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 const AllElements = () => {
   useLocation();
   const [searchParams] = useSearchParams();
-  var navigate = useNavigate();
   const page = parseInt(searchParams.get("page")) || 1;
+  var navigate = useNavigate();
+  const [ShowButtons, setShowButtons] = useState([]);
+  const [NextPageButtonsLength, setNextPageButtonsLength] = useState(0);
+
+  useEffect(() => {
+    setShowButtons(ButtonData?.slice((page - 1) * 10, page * 10));
+  }, [page]);
+
+  useEffect(() => {
+    const startIndex = page * 10; // next page ka starting index
+    const nextButtons = ButtonData.slice(startIndex, startIndex + 10);
+    console.log(nextButtons);
+    setNextPageButtonsLength(nextButtons.length);
+  }, [page]);
+
   const handleNextPage = () => {
     const nextPage = page + 1;
     navigate(`/all-elements?page=${nextPage}`, scrollTo(0, 0));
@@ -45,7 +59,7 @@ const AllElements = () => {
         id="buttonsShowCase"
         className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mt-10 "
       >
-        {ButtonData.slice((page - 1) * 10, page * 10).map((button, idx) => {
+        {ShowButtons.map((button, idx) => {
           return <SingleButtonOnAllElement buttonData={button} key={idx} />;
         })}
       </div>
@@ -65,15 +79,17 @@ const AllElements = () => {
             </h1>
           </div>
         )}
-        <div
-          onClick={() => handleNextPage()}
-          className="sm:w-1/2  cursor-pointer hover:scale-95 duration-300 transition-all  mt-5 h-[45px] bg-[#77767633] text-gray-300  py-2 px-3  w-full flex group justify-center items-center rounded-3xl"
-        >
-          <h1 className="flex justify-center items-center gap-3">
-            Next Page
-            <FaArrowRight className="mt-0.5 duration-300 transition-all group-hover:translate-x-1 group-hover:text-[#48cae4]" />
-          </h1>
-        </div>
+        {NextPageButtonsLength > 0 && (
+          <div
+            onClick={() => handleNextPage()}
+            className="sm:w-1/2  cursor-pointer hover:scale-95 duration-300 transition-all  mt-5 h-[45px] bg-[#77767633] text-gray-300  py-2 px-3  w-full flex group justify-center items-center rounded-3xl"
+          >
+            <h1 className="flex justify-center items-center gap-3">
+              Next Page
+              <FaArrowRight className="mt-0.5 duration-300 transition-all group-hover:translate-x-1 group-hover:text-[#48cae4]" />
+            </h1>
+          </div>
+        )}
       </div>
     </section>
   );
