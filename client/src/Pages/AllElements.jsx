@@ -8,29 +8,43 @@ const AllElements = () => {
   useLocation();
   const [searchParams] = useSearchParams();
   const page = parseInt(searchParams.get("page")) || 1;
+  const searchVal = searchParams.get("search") || false;
+
   var navigate = useNavigate();
   const [ShowButtons, setShowButtons] = useState([]);
   const [NextPageButtonsLength, setNextPageButtonsLength] = useState(0);
-
+  const [SearchValue, setSearchValue] = useState();
   useEffect(() => {
-    setShowButtons(ButtonData?.slice((page - 1) * 10, page * 10));
+    if (searchVal) {
+      const filteredButtons = ButtonData.filter((button) =>
+        button.buttonCategory.toLowerCase().includes(searchVal.toLowerCase())
+      );
+      setShowButtons(filteredButtons);
+      setSearchValue(searchVal);
+    } else {
+      setShowButtons(ButtonData?.slice((page - 1) * 10, page * 10));
+      console.log(searchVal, page);
+    }
   }, [page]);
 
   useEffect(() => {
     const startIndex = page * 10; // next page ka starting index
     const nextButtons = ButtonData.slice(startIndex, startIndex + 10);
-    console.log(nextButtons);
     setNextPageButtonsLength(nextButtons.length);
   }, [page]);
 
   const handleNextPage = () => {
     const nextPage = page + 1;
+    scrollToTop(0, 0);
     navigate(`/all-elements?page=${nextPage}`, scrollTo(0, 0));
   };
   const handlePrevPage = () => {
     const prevPage = page - 1;
     navigate(`/all-elements?page=${prevPage}`, scrollTo(0, 0));
   };
+
+
+
   return (
     <section className="w-screen min-h-screen text-white bg-black flex flex-col py-5 md:px-20 px-10">
       <h1 className="text-3xl font-bold mb-2 text-left">All Elements</h1>
@@ -46,8 +60,9 @@ const AllElements = () => {
             type="text"
             className="w-full outline-none"
             placeholder='Search for Category like "Glass","Neumorphism","Gradient","3D"'
+            value={SearchValue}
+            onChange={(e) => setSearchValue(e.target.value)}
           />
-          <IoMdSearch className="w-20 h-full rounded-full cursor-pointer hover:scale-90 duration-200 transition-all bg-[#48CAE4] py-1" />
         </div>
 
         <div className="sm:w-1/2 h-[45px] bg-[#77767633] text-gray-300  py-2 px-3  w-full flex justify-end items-center rounded-3xl">

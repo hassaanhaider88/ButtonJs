@@ -48,16 +48,16 @@ const NavBar = () => {
         </div>
 
         <div className="hidden ml-14 md:flex items-center gap-4">
-          <section class="flex justify-center items-center">
+          <section className="flex justify-center items-center">
             <button
               onClick={() => {
                 window.open("https://github.com/hassaanhaider88/ButtonJS");
               }}
               type="button"
-              class="group flex justify-center p-2 rounded-md drop-shadow-xl bg-[#050505] from-gray-800 to-black text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
+              className="group flex justify-center p-2 rounded-md drop-shadow-xl bg-[#050505] from-gray-800 to-black text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
             >
               <FaGithub size={25} />
-              <span class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-200 text-nowrap group-hover:text-sm group-hover:-translate-y-10 duration-700">
+              <span className="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-200 text-nowrap group-hover:text-sm group-hover:-translate-y-10 duration-700">
                 Star on GitHub
               </span>
             </button>
@@ -84,16 +84,16 @@ const NavBar = () => {
           <Link className="hover:text-indigo-600" to={"/donate"}>
             Donate
           </Link>
-            <section class="flex justify-center items-center">
+            <section className="flex justify-center items-center">
             <button
               onClick={() => {
                 window.open("https://github.com/hassaanhaider88/ButtonJS");
               }}
               type="button"
-              class="group flex justify-center p-2 rounded-md drop-shadow-xl bg-[#050505] from-gray-800 to-black text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
+              className="group flex justify-center p-2 rounded-md drop-shadow-xl bg-[#050505] from-gray-800 to-black text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
             >
               <FaGithub size={25} />
-              <span class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-200 text-nowrap group-hover:text-sm group-hover:-translate-y-10 duration-700">
+              <span className="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-200 text-nowrap group-hover:text-sm group-hover:-translate-y-10 duration-700">
                 Star on GitHub
               </span>
             </button>

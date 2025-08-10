@@ -15,6 +15,10 @@ button {
   color:white;
 }
 
+*::selection{
+  background: #fff;
+  color: #101319;
+}
 
 .CustomScrollForCards {
   overflow: auto;                /* enable scrolling */

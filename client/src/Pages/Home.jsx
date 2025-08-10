@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { FaArrowRight, FaGift, FaRegStar, FaWhatsapp } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
@@ -13,15 +13,14 @@ import MarqueeLine from "../Components/MarqueeLine";
 import BlogPostCom from "../Components/BlogPostCom";
 import TopCreator from "../Components/TopCreator";
 import Marquee from "react-fast-marquee";
-import { useGlobalState } from "../lib/useGlobalState";
 
 const Home = () => {
   const [SearchVal, setSearchVal] = useState("");
-const [IsLogin] = useGlobalState("IsLogin");
-  console.log(IsLogin)
+  var navigate = useNavigate();
   const handleSearch = (e) => {
     e.preventDefault();
-    toast.success("Sucessfull search", SearchVal);
+    navigate(`/all-elements?page=1&search=${SearchVal}`);
+    scrollToTop(0, 0);
   };
 
   const handleWhatsAppJoin = () => {
@@ -48,8 +47,8 @@ const [IsLogin] = useGlobalState("IsLogin");
         <div className="flex items-center divide-x divide-gray-300">
           <div className="flex cursor-pointer -space-x-3 pr-3">
             <img
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200"
-              alt="image"
+              src="https://ik.imagekit.io/hassaan/Hassaan_Haider_Q8QmkgGt2"
+              alt="image Hassaan Haider"
               className="w-12 h-12 rounded-full border-2 border-white hover:-translate-y-1 transition z-1"
             />
             <img
@@ -76,12 +75,12 @@ const [IsLogin] = useGlobalState("IsLogin");
           </div>
         </div>
       </div>
-      <h1 className="text-xl py-3 sm:text-6xl md:text-8xl text-center font-bold ">
+      <h1 className="text-xl  py-3 sm:text-6xl md:text-8xl text-center font-bold ">
         The Largest Library <br /> of Open-Source Buttons
       </h1>
       <p className="text-[#D6D9DF] text-center text-[18px] font-semibold">
-        Community-built library of UI elements. <br /> Copy as HTML/CSS,
-        Tailwind, React and Figma.
+        Community-built library of UI elements. <br /> Copy as JSX,
+        Tailwind and Figma.
       </p>
 
       <form
@@ -100,15 +99,16 @@ const [IsLogin] = useGlobalState("IsLogin");
           type="submit"
           className="bg-[#48cae4] active:scale-95 transition w-[170px] mr-2 h-12 rounded-[12px] text-sm text-white cursor-pointer"
         >
-          Subscribe
+          Search
         </button>
       </form>
       <ThreeButtonsLineSection />
       <Link
         to={"/all-elements?page=1"}
-        className="flex cursor-pointer  -mt-2 justify-center items-center gap-3 py-3 px-10 rounded-xl hover:bg-[#48cae4bd] duration-200 transition-all bg-[#48cae4]"
+        className="flex cursor-pointer group z-50 relative -mt-2 justify-center items-center gap-3 py-3 px-10 rounded-xl hover:bg-[#48cae4bd] duration-200 transition-all bg-[#48cae4]"
       >
-        <IoIosRocket /> Browse All Buttons
+        <IoIosRocket className="group-hover:-rotate-[46deg] duration-150 transition-all" />{" "}
+        Browse All Buttons
       </Link>
 
       <div className="w-screen flex-wrap min-h-screen flex items-center justify-center gap-20">
@@ -230,14 +230,13 @@ const [IsLogin] = useGlobalState("IsLogin");
 
       <div className="TopCreator bg-black w-screen min-h-screen flex flex-col items-center justify-center">
         <h1 className="text-5xl mb-10 font-semibold">Top Creators</h1>
-        <Marquee direction={'left'} speed={20}  >
+        <Marquee direction={"left"} speed={20}>
           <TopCreator From={0} To={6} />
         </Marquee>
-        <Marquee direction={'right'} speed={30}  >
+        <Marquee direction={"right"} speed={30}>
           <TopCreator From={6} To={12} />
         </Marquee>
       </div>
-    
     </div>
   );
 };

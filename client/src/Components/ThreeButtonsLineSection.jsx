@@ -5,8 +5,8 @@ import ButtonData from "../Data/ButtonsData";
 const ThreeButtonsLineSection = () => {
   const [ButtonToBeRendered, setButtonToBeRendered] = useState([]);
   useEffect(() => {
-    setButtonToBeRendered(ButtonData);
-  });
+    setButtonToBeRendered(ButtonData.sort(() => Math.random() - 0.5));
+  },[]);
   return (
     <div className="w-screen  min-h-screen gap-5 py-10 flex items-center justify-center flex-col">
       <SingleLineButtons
