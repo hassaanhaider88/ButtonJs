@@ -14,7 +14,7 @@ const NavBar = () => {
     <div className="w-[100vw] z-50 flex font-semibold cursor-pointer mt-4 sticky top-2 justify-center items-center">
       <nav className="flex justify-between bg-[#101319]  w-[90vw] items-center border mx-4 border-slate-700 px-6  rounded-full text-white text-sm">
         <Link to="/">
-          <img src="./ButtonJs.svg" className="w-20 h-20" alt="" />
+          <img src="./ButtonJs.png" className="w-16 h-16" alt="" />
         </Link>
         <div className="hidden md:flex items-center gap-6 ml-7">
           <Link
@@ -28,14 +28,14 @@ const NavBar = () => {
               All Elements
             </span>
           </Link>
-          <Link to={"/donate"} className="relative overflow-hidden h-6 group">
+          <span onClick={()=>window.open('https://ko-fi.com/hassaanhaiderdev', '_blank')} className="relative overflow-hidden h-6 group">
             <span className="block group-hover:-translate-y-full transition-transform duration-300">
               Donate
             </span>
             <span className="block absolute top-full left-0 group-hover:translate-y-[-100%] transition-transform duration-300">
               Donate
             </span>
-          </Link>
+          </span>
           <Link to={"/blogs"} className="relative overflow-hidden h-6 group">
             <span className="block group-hover:-translate-y-full transition-transform duration-300">
               Blogs
