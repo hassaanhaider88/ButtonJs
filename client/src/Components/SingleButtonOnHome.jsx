@@ -16,19 +16,6 @@ const SingleButtonOnHome = ({ buttonData }) => {
  
   return (
     <div className="w-[300px] group cursor-pointer relative h-[204px] mx-auto bg-[#5c5c5e3d] rounded-[30px] z-[1]">
-      <div className="flex items-center w-full  justify-evenly p-[9px]">
-        <div className="px-1">
-          <span className="flex justify-center items-center gap-2 px-2 rounded-2xl p-[1px]  bg-[#5cecff]">
-            {buttonData.NumberOfViews} <GrFormView />
-          </span>
-        </div>
-
-        <div className="px-1">
-          <span className="flex justify-center items-center gap-2 px-2 rounded-2xl p-[1px]  bg-[#5c82ff]">
-            {buttonData.NumbersOfCopyCode} <IoCodeDownloadSharp />
-          </span>
-        </div>
-      </div>
       <div className="card__content absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         {/* this button code will be dynamic  */}
         {/* <JsxParser jsx={buttonData.ReactTailwindCode} /> */}
