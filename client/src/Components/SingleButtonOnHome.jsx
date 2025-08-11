@@ -7,22 +7,19 @@ import { toast } from "react-toastify";
 import JsxParser from "react-jsx-parser";
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 
-
 const SingleButtonOnHome = ({ buttonData }) => {
   const handleCopyCodeClick = () => {
     navigator.clipboard.writeText(buttonData.ReactTailwindCode);
     toast.success("Code copied to clipboard");
   };
- 
+
   return (
     <div className="w-[300px] group cursor-pointer relative h-[204px] mx-auto bg-[#5c5c5e3d] rounded-[30px] z-[1]">
       <div className="card__content absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        {/* this button code will be dynamic  */}
-        {/* <JsxParser jsx={buttonData.ReactTailwindCode} /> */}
-             <LiveProvider code={buttonData.ReactTailwindCode}>
-                    <LiveError />
-                    <LivePreview />
-                  </LiveProvider>
+        <LiveProvider code={buttonData.ReactTailwindCode}>
+          <LiveError />
+          <LivePreview />
+        </LiveProvider>
       </div>
       <div
         id="CopyCodeButton"

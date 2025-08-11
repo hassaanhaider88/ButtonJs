@@ -13,9 +13,7 @@ const SingleButtonOnAllElement = ({ buttonData }) => {
     navigator.clipboard.writeText(buttonData.ReactTailwindCode);
     toast.success("Code copied to clipboard");
   };
-  var Button = {
-    _id: "a2567j32hsdoi23wenkasdfjklasdowe",
-  };
+
   return (
     <div className="py-5">
       <div className="w-[350px] group cursor-pointer overflow-hidden relative h-[404px] mx-auto bg-[#5c5c5e31] rounded-[30px] z-[1] ">
@@ -41,7 +39,10 @@ const SingleButtonOnAllElement = ({ buttonData }) => {
             <span className="absolute bottom-[-7px] left-0 w-0 h-[2px] bg-[#48cae4] transition-all duration-300 group-hover:w-full"></span>
           </button>
           <div className=" scale-80 inline-flex items-center group">
-            <Link to={`/view-code/${buttonData._id}`}>
+            <Link
+              to={`/view-code/${buttonData._id}`}
+              onClick={() => window.scrollTo(0, 0)}
+            >
               {/*will dynamic url */}
               <button className="flex items-center gap-2 font-semibold text-[20px] text-black relative group">
                 <p className="relative cursor-pointer text-[20px] text-black transition-colors duration-300 group-hover:text-[#48cae4] before:content-['Get Code'] before:absolute before:inset-0 before:w-0 before:overflow-hidden before:text-[#48cae4] before:transition-all before:duration-300 group-hover:before:w-full">
