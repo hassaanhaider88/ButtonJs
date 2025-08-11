@@ -81,9 +81,9 @@ const NavBar = () => {
           <Link className="hover:text-indigo-600" to={"/blogs"}>
             Blog
           </Link>
-          <Link className="hover:text-indigo-600" to={"/donate"}>
+          <span onClick={()=>window.open('https://ko-fi.com/hassaanhaiderdev', '_blank')} className="hover:text-indigo-600" to={"/donate"}>
             Donate
-          </Link>
+          </span>
             <section className="flex justify-center items-center">
             <button
               onClick={() => {
