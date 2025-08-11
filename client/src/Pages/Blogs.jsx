@@ -12,7 +12,7 @@ const Blogs = () => {
         className="w-full rounded-[500px] flex-col flex justify-center items-center py-10"
       >
         <h1 className="text-2xl sm:text-5xl font-semibold">ButtonJS Blogs</h1>
-        <p className="text-lg text-center text-gray-400 mt-1 font-semibold">
+        <p className="md:text-lg text-[12px] text-center text-gray-400 mt-1 font-semibold">
           Use them in UI/UX, Tailwind CSS, JavaScript, React, Next.js, and
           more...
         </p>

@@ -1,17 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TiThMenu } from "react-icons/ti";
 import { ImCross } from "react-icons/im";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import { FaGithub } from "react-icons/fa";
 
 const NavBar = () => {
   const [ShowMenu, setShowMenu] = useState(false);
-
+var Location  = useLocation()
+ useEffect(() => {
+setShowMenu(false)
+ }, [Location])
 
   return (
-    <div className="w-[100vw] z-50 flex font-semibold cursor-pointer mt-4 sticky top-2 justify-center items-center">
+    <div className="w-[100vw] z-100 flex font-semibold cursor-pointer mt-4 sticky top-2 justify-center items-center">
       <nav className="flex justify-between bg-[#101319]  w-[90vw] items-center border mx-4 border-slate-700 px-6  rounded-full text-white text-sm">
         <Link to="/">
           <img src="./ButtonJs.png" className="w-16 h-16" alt="" />

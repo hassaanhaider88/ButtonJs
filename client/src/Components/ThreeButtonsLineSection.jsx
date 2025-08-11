@@ -8,7 +8,7 @@ const ThreeButtonsLineSection = () => {
     setButtonToBeRendered(ButtonData.sort(() => Math.random() - 0.5));
   },[]);
   return (
-    <div className="w-screen  min-h-screen gap-5 py-10 flex items-center justify-center flex-col">
+    <div className="w-screen overflow-x-hidden  min-h-screen gap-5 py-10 flex items-center justify-center flex-col">
       <SingleLineButtons
         Move="20px"
         ButtonToBeRendered={ButtonToBeRendered.slice(0, 5)}
