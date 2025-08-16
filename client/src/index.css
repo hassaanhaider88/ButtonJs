@@ -1,10 +1,5 @@
 @import "tailwindcss";
 
-@theme {
-  --breakpoint-xs: 400px;
- 
-}
-
 body {
   background-color: #101319;
   overflow-x: hidden;
@@ -12,10 +7,10 @@ body {
 
 button {
   cursor: pointer;
-  color:white;
+  color: white;
 }
 
-*::selection{
+*::selection {
   background: #fff;
   color: #101319;
 }
