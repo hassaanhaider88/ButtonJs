@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 import { FaArrowRight, FaGift, FaRegStar, FaWhatsapp } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { MdVerified } from "react-icons/md";
@@ -17,10 +17,17 @@ import Marquee from "react-fast-marquee";
 const Home = () => {
   const [SearchVal, setSearchVal] = useState("");
   var navigate = useNavigate();
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   const handleSearch = (e) => {
     e.preventDefault();
     navigate(`/all-elements?page=1&search=${SearchVal}`);
-    scrollToTop(0, 0);
+    scrollToTop();
   };
 
   const handleWhatsAppJoin = () => {
