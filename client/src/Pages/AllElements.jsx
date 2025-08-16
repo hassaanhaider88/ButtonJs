@@ -25,7 +25,7 @@ const AllElements = () => {
       setShowButtons(ButtonData?.slice((page - 1) * 10, page * 10));
       console.log(searchVal, page);
     }
-  }, [page]);
+  }, [page, searchVal]);
 
   useEffect(() => {
     const startIndex = page * 10; // next page ka starting index
@@ -33,14 +33,22 @@ const AllElements = () => {
     setNextPageButtonsLength(nextButtons.length);
   }, [page]);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   const handleNextPage = () => {
     const nextPage = page + 1;
-    scrollToTop(0, 0);
-    navigate(`/all-elements?page=${nextPage}`, scrollTo(0, 0));
+    scrollToTop();
+    navigate(`/all-elements?page=${nextPage}`);
   };
   const handlePrevPage = () => {
     const prevPage = page - 1;
-    navigate(`/all-elements?page=${prevPage}`, scrollTo(0, 0));
+    scrollToTop();
+    navigate(`/all-elements?page=${prevPage}`);
   };
 
 

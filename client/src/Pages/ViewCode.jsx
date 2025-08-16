@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import JsxParser from "react-jsx-parser";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Editor from "@monaco-editor/react";
 import { FaArrowLeft, FaCopy } from "react-icons/fa6";
 import { IoMdEye } from "react-icons/io";
@@ -14,7 +14,6 @@ import { LiveProvider, LivePreview, LiveError } from "react-live";
 import * as ReactIcons from "react-icons/fa";
 
 const ViewCode = () => {
-  var navigate = useNavigate();
   const { id } = useParams();
   const [SelectBtn, setSelectBtn] = useState(null);
   const [ReactTailCode, setReactTailCode] = useState(null);
@@ -40,11 +39,6 @@ const ViewCode = () => {
 
   const handleEditorChange = (value) => {
     setReactTailCode(value || "");
-  };
-
-  const scope = {
-    React,
-    ...ReactIcons, // so that user JSX can use icons if needed
   };
 
   return (
@@ -86,7 +80,7 @@ const ViewCode = () => {
               <div className="absolute w-[60px] h-[60px] bg-white -top-[52px] -left-[52px] rotate-45 z-10 transition-all duration-300 peer-checked:left-[-10px] peer-checked:top-[-10px]" />
             </label>
           </span>
-          <LiveProvider code={ReactTailCode} scope={{React}}>
+          <LiveProvider code={ReactTailCode} scope={{ React, ...ReactIcons }}>
             <LivePreview className="w-full h-full p-4 flex justify-center items-center" />
             <LiveError className="text-red-500 text-sm" />
           </LiveProvider>
