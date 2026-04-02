@@ -1049,10 +1049,10 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
     createdOn: "2025-07-28T14:20:00.000+00:00",
   },
   {
-  _id: "ButtonJsByHMKCodeWebNumber29",
-  buttonCategory: "Gradient Glow Button",
+    _id: "ButtonJsByHMKCodeWebNumber29",
+    buttonCategory: "Gradient Glow Button",
 
-  ReactTailwindCode: `<button
+    ReactTailwindCode: `<button
   className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-bold text-white transition-all duration-300 ease-in-out transform hover:scale-105 active:scale-95"
 >
   <div className="absolute inset-0 bg-gradient-to-br from-indigo-600 via-purple-500 to-pink-500 rounded-full transition-all duration-300 group-hover:scale-110 animate-gradient"></div>
@@ -1092,10 +1092,10 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
   </span>
 </button>`,
 
-  NumberOfViews: "0",
-  NumbersOfCopyCode: "0",
-  createdOn: "2025-08-08T15:10:00.000+00:00",
-},
+    NumberOfViews: "0",
+    NumbersOfCopyCode: "0",
+    createdOn: "2025-08-08T15:10:00.000+00:00",
+  },
   {
     _id: "ButtonJsByHMKCodeWebNumber30",
     buttonCategory: "Underline On Hover",
@@ -1301,7 +1301,7 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
     NumberOfViews: "720",
     NumbersOfCopyCode: "310",
     createdOn: "2025-07-28T14:20:00.000+00:00",
-  }, 
+  },
   {
     _id: "ButtonJsByHMKCodeWebNumber34",
     buttonCategory: "Check Out ButtonJs",
@@ -1355,7 +1355,7 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
     NumberOfViews: "720",
     NumbersOfCopyCode: "310",
     createdOn: "2025-07-28T14:20:00.000+00:00",
-  },  
+  },
   {
     _id: "ButtonJsByHMKCodeWebNumber37",
     buttonCategory: "Radio Checks",
@@ -1464,10 +1464,10 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
   },
 
 
-{
-  _id: "ButtonJsByHMKCodeWebNumber39",
-  buttonCategory: "Hover Button Animation",
-  ReactTailwindCode:`
+  {
+    _id: "ButtonJsByHMKCodeWebNumber39",
+    buttonCategory: "Hover Button Animation",
+    ReactTailwindCode: `
   <button className="relative font-bold text-white rounded-full cursor-pointer w-[95.02px] h-[42.66px] bg-[#3653f8] flex justify-center items-center overflow-hidden group">
       {/* First set of letters */}
       <span className="flex overflow-hidden group-hover:absolute">
@@ -1491,22 +1491,22 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
     </button>`,
     NumberOfViews: "1220",
     NumbersOfCopyCode: "410",
-    createdOn : "2025-08-28T14:20:00.000+00:00"
-  
-},
-{
-  _id: "ButtonJsByHMKCodeWebNumber40",
-  buttonCategory: "Hover Button Animation",
-  ReactTailwindCode:`<div className="relative p-[3px] rounded-[0.9em] bg-gradient-to-r from-[#03a9f4] to-[#f441a5] transition-all duration-400 before:content-[''] before:absolute before:inset-0 before:m-auto before:rounded-[0.9em] before:z-[-10] before:blur-0 before:transition-all before:duration-400 hover:before:bg-gradient-to-r hover:before:from-[#03a9f4] hover:before:to-[#f441a5] hover:before:blur-[1.2em] active:before:blur-[0.2em]">
+    createdOn: "2025-08-28T14:20:00.000+00:00"
+
+  },
+  {
+    _id: "ButtonJsByHMKCodeWebNumber40",
+    buttonCategory: "Hover Button Animation",
+    ReactTailwindCode: `<div className="relative p-[3px] rounded-[0.9em] bg-gradient-to-r from-[#03a9f4] to-[#f441a5] transition-all duration-400 before:content-[''] before:absolute before:inset-0 before:m-auto before:rounded-[0.9em] before:z-[-10] before:blur-0 before:transition-all before:duration-400 hover:before:bg-gradient-to-r hover:before:from-[#03a9f4] hover:before:to-[#f441a5] hover:before:blur-[1.2em] active:before:blur-[0.2em]">
       <button className="text-[1.4em] px-[0.8em] py-[0.6em] rounded-[0.5em] border-none bg-black text-white cursor-pointer shadow-[2px_2px_3px_rgba(0,0,0,0.7)]">
         Hover me
       </button>
     </div>`,
     NumberOfViews: "1220",
     NumbersOfCopyCode: "410",
-    createdOn : "2025-08-28T14:20:00.000+00:00"
-  
-}
+    createdOn: "2025-08-28T14:20:00.000+00:00"
+
+  }
 ];
 
 export default ButtonData;

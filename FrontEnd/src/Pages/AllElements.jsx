@@ -2,10 +2,9 @@ import { IoMdSearch } from "react-icons/io";
 import ButtonData from "../Data/ButtonsData";
 import SingleButtonOnAllElement from "../Components/SingleButtonOnAllElement";
 import { FaArrowRight } from "react-icons/fa6";
-import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
+import {  useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 const AllElements = () => {
-  useLocation();
   const [searchParams] = useSearchParams();
   const page = parseInt(searchParams.get("page")) || 1;
   const searchVal = searchParams.get("search") || false;
@@ -17,7 +16,7 @@ const AllElements = () => {
   useEffect(() => {
     if (searchVal) {
       const filteredButtons = ButtonData.filter((button) =>
-        button.buttonCategory.toLowerCase().includes(searchVal.toLowerCase())
+        button.buttonCategory.toLowerCase().includes(searchVal.toLowerCase()),
       );
       setShowButtons(filteredButtons);
       setSearchValue(searchVal);
@@ -33,17 +32,18 @@ const AllElements = () => {
     setNextPageButtonsLength(nextButtons.length);
   }, [page]);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [page]);
+
   const handleNextPage = () => {
     const nextPage = page + 1;
-    scrollToTop(0, 0);
-    navigate(`/all-elements?page=${nextPage}`, scrollTo(0, 0));
+    navigate(`/all-elements?page=${nextPage}`, { replace: true });
   };
   const handlePrevPage = () => {
     const prevPage = page - 1;
-    navigate(`/all-elements?page=${prevPage}`, scrollTo(0, 0));
+    navigate(`/all-elements?page=${prevPage}`, { replace: true });
   };
-
-
 
   return (
     <section className="w-screen min-h-screen text-white bg-black flex flex-col py-5 md:px-20 px-10">
