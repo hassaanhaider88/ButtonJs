@@ -1,8 +1,8 @@
 import { IoMdSearch } from "react-icons/io";
-import ButtonData from "../Data/ButtonsData";
+// import ButtonData from "../Data/ButtonsData";
 import SingleButtonOnAllElement from "../Components/SingleButtonOnAllElement";
 import { FaArrowRight } from "react-icons/fa6";
-import {  useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 const AllElements = () => {
   const [searchParams] = useSearchParams();
@@ -13,24 +13,36 @@ const AllElements = () => {
   const [ShowButtons, setShowButtons] = useState([]);
   const [NextPageButtonsLength, setNextPageButtonsLength] = useState(0);
   const [SearchValue, setSearchValue] = useState();
-  useEffect(() => {
-    if (searchVal) {
-      const filteredButtons = ButtonData.filter((button) =>
-        button.buttonCategory.toLowerCase().includes(searchVal.toLowerCase()),
-      );
-      setShowButtons(filteredButtons);
-      setSearchValue(searchVal);
-    } else {
-      setShowButtons(ButtonData?.slice((page - 1) * 10, page * 10));
-      console.log(searchVal, page);
-    }
-  }, [page]);
+  const [ButtonData, setButtonData] = useState([]);
+  // useEffect(() => {
+  //   if (searchVal) {
+  //     const filteredButtons = ButtonData.filter((button) =>
+  //       button.buttonCategory.toLowerCase().includes(searchVal.toLowerCase()),
+  //     );
+
+  //     setShowButtons(filteredButtons);
+  //     setSearchValue(searchVal);
+  //   } else {
+  //     setShowButtons(ButtonData?.slice((page - 1) * 10, page * 10));
+  //     console.log(searchVal, page);
+  //   }
+  // }, [ButtonData, page, searchVal]);
 
   useEffect(() => {
-    const startIndex = page * 10; // next page ka starting index
-    const nextButtons = ButtonData.slice(startIndex, startIndex + 10);
-    setNextPageButtonsLength(nextButtons.length);
-  }, [page]);
+    const fetchButtons = async () => {
+      const res = await fetch(`http://localhost:3000/api/allbuttons`);
+      const data = await res.json();
+      console.log(data.data);
+      setButtonData(data.data);
+    };
+    fetchButtons();
+  }, []);
+
+  // useEffect(() => {
+  //   const startIndex = page * 10; // next page ka starting index
+  //   const nextButtons = ButtonData.slice(startIndex, startIndex + 10);
+  //   setNextPageButtonsLength(nextButtons.length);
+  // }, [ButtonData, page]);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -74,7 +86,7 @@ const AllElements = () => {
         id="buttonsShowCase"
         className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mt-10 "
       >
-        {ShowButtons.map((button, idx) => {
+        {ButtonData?.map((button, idx) => {
           return <SingleButtonOnAllElement buttonData={button} key={idx} />;
         })}
       </div>
