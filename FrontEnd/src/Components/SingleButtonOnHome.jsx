@@ -1,10 +1,7 @@
 import { FaArrowRight } from "react-icons/fa6";
 import { MdOutlineContentCopy } from "react-icons/md";
-import { IoCodeDownloadSharp } from "react-icons/io5";
-import { GrFormView } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import JsxParser from "react-jsx-parser";
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 
 const SingleButtonOnHome = ({ buttonData }) => {

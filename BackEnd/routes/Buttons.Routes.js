@@ -1,13 +1,31 @@
-import { ButtonModel } from "../models/Buttons.Model.js";
+// import authMiddleware from "../middlewares/authMiddleware.js";
+import { sendButtons, addButton, sendAllButtons, updateButton} from "../controllers/Buttons.Controller.js";
+
 const routes = async (fastify, options) => {
-  fastify.get("/", async (request, reply) => {
-    const { page = 1 } = request.query;
-    const buttons = await ButtonModel.find().sort({ createdAt: -1 }).skip((page - 1) * 15).limit(15);
-    return {
-        success: true,
-      data: buttons,
-    };
-  });
+  fastify.get("/", sendButtons);
+  fastify.post("/add-button", addButton);
+  fastify.get("/all", {
+    preHandler: async (request, reply) => {
+    if (!request.headers.authorization) {
+     throw new Error("Authorization header missing");
+    }
+    const authHeader = request.headers.authorization.split(" ")[1];
+     if(authHeader !== process.env.AuthSecret){
+        throw new Error("You are not admin...");
+    }
+    }
+}, sendAllButtons);
+  fastify.patch("/update-button/:id", {
+    preHandler: async (request, reply) => {
+    if (!request.headers.authorization) {
+     throw new Error("Authorization header missing");
+    }
+    const authHeader = request.headers.authorization.split(" ")[1];
+     if(authHeader !== process.env.AuthSecret){
+        throw new Error("You are not admin...");
+    }
+    }
+},updateButton);
 };
 
 export default routes;

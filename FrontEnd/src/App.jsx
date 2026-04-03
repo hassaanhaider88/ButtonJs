@@ -10,11 +10,10 @@ import Blogs from "./Pages/Blogs";
 import Contact from "./Pages/Contact";
 import AboutUs from "./Pages/AboutUs";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
-
-import { useGlobalState } from "./lib/useGlobalState";
+import AddButton from "./Pages/AddButton";
 
 const App = () => {
-  const [IsLogin] = useGlobalState("IsLogin");
+
   return (
     <>
       <NavBar />
@@ -27,6 +26,7 @@ const App = () => {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/add-button" element={<AddButton />} />
 
         <Route path="/view-code/:id" element={<ViewCode />} />
       </Routes>

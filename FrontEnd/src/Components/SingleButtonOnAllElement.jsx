@@ -9,7 +9,6 @@ import { IoMdEye } from "react-icons/io";
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 
 const SingleButtonOnAllElement = ({ buttonData }) => {
-  console.log(buttonData);
   const handleCopyCodeClick = () => {
     navigator.clipboard.writeText(buttonData.ReactTailwindCode);
     toast.success("Code copied to clipboard");

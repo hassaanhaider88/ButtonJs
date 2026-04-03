@@ -47,6 +47,14 @@ setShowMenu(false)
               Blogs
             </span>
           </Link>
+           <Link to={"/add-button"} className="relative overflow-hidden h-6 group">
+            <span className="block group-hover:-translate-y-full transition-transform duration-300">
+              Add Button
+            </span>
+            <span className="block absolute top-full left-0 group-hover:translate-y-[-100%] transition-transform duration-300">
+              Add Button
+            </span>
+          </Link>
         
         </div>
 
@@ -84,9 +92,13 @@ setShowMenu(false)
           <Link className="hover:text-indigo-600" to={"/blogs"}>
             Blog
           </Link>
+          <Link className="hover:text-indigo-600" to={"/add-button"}>
+            Add Button
+          </Link>
           <span onClick={()=>window.open('https://ko-fi.com/hassaanhaiderdev', '_blank')} className="hover:text-indigo-600" to={"/donate"}>
             Donate
           </span>
+          
             <section className="flex justify-center items-center">
             <button
               onClick={() => {
