@@ -1,5 +1,4 @@
 import { Link, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
 import { FaArrowRight, FaGift, FaRegStar, FaWhatsapp } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { MdVerified } from "react-icons/md";
@@ -20,7 +19,7 @@ const Home = () => {
   const handleSearch = (e) => {
     e.preventDefault();
     navigate(`/all-elements?page=1&search=${SearchVal}`);
-    scrollToTop(0, 0);
+    window.scrollTo(0, 0,{behavior:"smooth"});
   };
 
   const handleWhatsAppJoin = () => {
@@ -64,6 +63,7 @@ const Home = () => {
             <img
               src="https://randomuser.me/api/portraits/men/75.jpg"
               alt="image"
+              relation="preload"
               className="w-12 h-12 rounded-full border-2 border-white hover:-translate-y-1 transition z-[4]"
             />
           </div>

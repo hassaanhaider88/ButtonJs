@@ -19,6 +19,7 @@ const buttonSchema = new Schema({
     }
 },{
     timestamps : true,
+    versionKey : false,
 });
 
 export const ButtonModel = model("Button", buttonSchema);

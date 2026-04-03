@@ -1,9 +1,10 @@
-import { IoMdSearch } from "react-icons/io";
-// import ButtonData from "../Data/ButtonsData";
+/* eslint-disable no-unused-vars */
 import SingleButtonOnAllElement from "../Components/SingleButtonOnAllElement";
 import { FaArrowRight } from "react-icons/fa6";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import getButtonsFromBG from "../lib/getButtonsFromBG";
+
 const AllElements = () => {
   const [searchParams] = useSearchParams();
   const page = parseInt(searchParams.get("page")) || 1;
@@ -14,38 +15,25 @@ const AllElements = () => {
   const [NextPageButtonsLength, setNextPageButtonsLength] = useState(0);
   const [SearchValue, setSearchValue] = useState();
   const [ButtonData, setButtonData] = useState([]);
-  // useEffect(() => {
-  //   if (searchVal) {
-  //     const filteredButtons = ButtonData.filter((button) =>
-  //       button.buttonCategory.toLowerCase().includes(searchVal.toLowerCase()),
-  //     );
-
-  //     setShowButtons(filteredButtons);
-  //     setSearchValue(searchVal);
-  //   } else {
-  //     setShowButtons(ButtonData?.slice((page - 1) * 10, page * 10));
-  //     console.log(searchVal, page);
-  //   }
-  // }, [ButtonData, page, searchVal]);
 
   useEffect(() => {
     const fetchButtons = async () => {
-      const res = await fetch(`http://localhost:3000/api/allbuttons`);
-      const data = await res.json();
-      console.log(data.data);
-      setButtonData(data.data);
+      const resButtons = await getButtonsFromBG(page);
+      setButtonData(resButtons);
+      setNextPageButtonsLength(resButtons.length);
+      setShowButtons(resButtons);
+      if(resButtons.length < 15){
+        setNextPageButtonsLength(false);
+      }
     };
     fetchButtons();
-  }, []);
+  }, [page]);
 
-  // useEffect(() => {
-  //   const startIndex = page * 10; // next page ka starting index
-  //   const nextButtons = ButtonData.slice(startIndex, startIndex + 10);
-  //   setNextPageButtonsLength(nextButtons.length);
-  // }, [ButtonData, page]);
+
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+
   }, [page]);
 
   const handleNextPage = () => {
@@ -123,3 +111,4 @@ const AllElements = () => {
 };
 
 export default AllElements;
+

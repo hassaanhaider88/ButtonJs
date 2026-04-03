@@ -1,12 +1,23 @@
 import React, { useEffect, useState } from "react";
 import SingleButtonOnHome from "./SingleButtonOnHome";
-import ButtonData from "../Data/ButtonsData";
+// import ButtonData from "../Data/ButtonsData";
+import getButtonsFromBG from "../lib/getButtonsFromBG";
+import { useLocation } from "react-router-dom";
 
 const ThreeButtonsLineSection = () => {
+  const location = useLocation()
   const [ButtonToBeRendered, setButtonToBeRendered] = useState([]);
+
+  const fetchButtons = async () => {
+    const random = Math.floor(Math.random() * 4) + 1;
+    const buttons = await getButtonsFromBG(random);
+    setButtonToBeRendered(buttons)
+  };
+
   useEffect(() => {
-    setButtonToBeRendered(ButtonData.sort(() => Math.random() - 0.5));
-  },[]);
+    fetchButtons();
+  }, [location.pathname]);
+
   return (
     <div className="w-screen overflow-x-hidden  min-h-screen gap-5 py-10 flex items-center justify-center flex-col">
       <SingleLineButtons
