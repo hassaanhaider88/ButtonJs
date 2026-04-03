@@ -1,9 +1,11 @@
 import fastify from "fastify";
 import dotenv from "dotenv";
-import fs from "node:fs/promises"
+import compression from '@fastify/compress'
 import cors from "@fastify/cors"
+import {connectDB} from "./config/ConnetDB.js";
 import {rateLimit} from "./middlewares/rateLimitter.js";
 import {requestLogger} from "./middlewares/logger.js";
+import ButtonRoutes from "./routes/Buttons.Routes.js";
 
 
 
@@ -11,11 +13,13 @@ dotenv.config();
 
 const app = fastify();
 
+connectDB();
 
 app.register(cors, { origin: '*' });
 // all routes will be protected by this rate limiter
 app.register(rateLimit)
 app.addHook("onRequest", requestLogger);
+await app.register(compression)
 
 
 
@@ -28,15 +32,17 @@ app.get("/", (req, res) => {
     }
 });
 
-app.get("/api/allbuttons", async (req, res) => {
+app.register(ButtonRoutes, {prefix : "/api/buttons"})
 
-    const ButtonData = await fs.readFile('data.json', { encoding: 'utf8' });
-    const parsedData = JSON.parse(ButtonData);
-    return {
-        success: true,
-        data: parsedData
-    }
-})
+// app.get("/api/allbuttons", async (req, res) => {
+
+//     const ButtonData = await fs.readFile('data.json', { encoding: 'utf8' });
+//     const parsedData = JSON.parse(ButtonData);
+//     return {
+//         success: true,
+//         data: parsedData
+//     }
+// })
 
 app.listen({ port: PORT }, function (err, address) {
     if (err) {
