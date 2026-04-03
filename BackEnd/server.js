@@ -2,7 +2,7 @@ import fastify from "fastify";
 import dotenv from "dotenv";
 import fs from "node:fs/promises"
 import cors from "@fastify/cors"
-import morgan from "morgan";
+import {rateLimit} from "./middlewares/rateLimitter.js"
 
 
 
@@ -11,6 +11,8 @@ dotenv.config();
 const app = fastify();
 
 
+// all routes will be protected by this rate limiter
+app.register(rateLimit)
 app.register(cors, { origin: '*' });
 
 
