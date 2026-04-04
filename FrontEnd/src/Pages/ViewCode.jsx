@@ -80,9 +80,6 @@ const ViewCode = () => {
               <span className="flex items-center justify-center gap-2">
                 {SelectBtn?.NumberOfViews} <IoMdEye />
               </span>
-              <span className="flex items-center justify-center gap-2">
-                {SelectBtn?.NumbersOfCopyCode} <FaCopy />
-              </span>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center gap-5 md:flex-row ">
