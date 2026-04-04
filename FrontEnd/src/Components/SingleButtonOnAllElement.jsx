@@ -61,9 +61,6 @@ const SingleButtonOnAllElement = ({ buttonData }) => {
           <span className="flex items-center justify-center gap-2">
             {buttonData.NumberOfViews} <IoMdEye />
           </span>
-          <span className="flex items-center justify-center gap-2">
-            {buttonData.NumbersOfCopyCode} <FaCopy />
-          </span>
         </div>
       </div>
     </div>

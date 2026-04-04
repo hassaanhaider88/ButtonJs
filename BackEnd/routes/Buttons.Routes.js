@@ -1,9 +1,10 @@
 // import authMiddleware from "../middlewares/authMiddleware.js";
-import { sendButtons, addButton, sendAllButtons, updateButton,deleteButton } from "../controllers/Buttons.Controller.js";
+import { sendButtons, addButton, sendAllButtons, updateButton, deleteButton, singleBtnSendAndUpdateView } from "../controllers/Buttons.Controller.js";
 
 const routes = async (fastify, options) => {
   fastify.get("/", sendButtons);
   fastify.post("/add-button", addButton);
+  fastify.get("/single-button/:id", singleBtnSendAndUpdateView);
   fastify.get("/all", {
     preHandler: async (request, reply) => {
       if (!request.headers.authorization) {

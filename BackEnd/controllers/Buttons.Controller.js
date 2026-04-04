@@ -141,4 +141,42 @@ const deleteButton = async (req, res) => {
     }
 };
 
-export { sendButtons, addButton, sendAllButtons, updateButton, deleteButton };
+const singleBtnSendAndUpdateView = async (req, res) => {
+    try {
+        const { id } = req.params;
+        if (!id) {
+            return {
+                success: false,
+                message: "Button id is required",
+            };
+        }
+        const button = await ButtonModel.findOneAndUpdate(
+            { _id: id },
+            {
+                $inc: {
+                    NumberOfViews: +1,
+                },
+            },
+            {
+                returnDocument: "after",
+            }
+        );
+        if (!button) {
+            return {
+                success: false,
+                message: "Button not found",
+            };
+        }
+        return {
+            success: true,
+            data: button,
+        };
+    } catch (error) {
+        return {
+            success: false,
+            message: error.message,
+        };
+    }
+};
+
+export { sendButtons, addButton, sendAllButtons, updateButton, deleteButton, singleBtnSendAndUpdateView };

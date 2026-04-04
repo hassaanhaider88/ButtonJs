@@ -1,37 +1,29 @@
 import { Schema, model } from "mongoose";
 
 const buttonSchema = new Schema({
-    creatorEmail : {
-        type : String,
-        required : [true, "Email is required"],
+    creatorEmail: {
+        type: String,
+        required: [true, "Email is required"],
     },
-    IsLive : {
-        type : Boolean,
-        default : false,
+    IsLive: {
+        type: Boolean,
+        default: false,
     },
-     IsRejected : {
-        type : Boolean,
-        default : false,
+    buttonCategory: {
+        type: String,
+        required: [true, "Button Category is required"],
     },
-    buttonCategory : {
-        type : String,
-        required : [true, "Button Category is required"],
+    ReactTailwindCode: {
+        type: String,
+        required: [true, "React Tailwind Code is required"],
     },
-    ReactTailwindCode : {
-        type : String,
-        required : [true, "React Tailwind Code is required"],
+    NumberOfViews: {
+        type: Number,
+        default: 0,
     },
-    NumberOfViews : {
-        type : Number,
-        default : 0,
-    },
-    NumbersOfCopyCode : {
-        type : Number,
-        default : 0,
-    }
-},{
-    timestamps : true,
-    versionKey : false,
+}, {
+    timestamps: true,
+    versionKey: false,
 });
 
 export const ButtonModel = model("Button", buttonSchema);
