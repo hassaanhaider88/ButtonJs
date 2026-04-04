@@ -1,31 +1,42 @@
 // import authMiddleware from "../middlewares/authMiddleware.js";
-import { sendButtons, addButton, sendAllButtons, updateButton} from "../controllers/Buttons.Controller.js";
+import { sendButtons, addButton, sendAllButtons, updateButton,deleteButton } from "../controllers/Buttons.Controller.js";
 
 const routes = async (fastify, options) => {
   fastify.get("/", sendButtons);
   fastify.post("/add-button", addButton);
   fastify.get("/all", {
     preHandler: async (request, reply) => {
-    if (!request.headers.authorization) {
-     throw new Error("Authorization header missing");
-    }
-    const authHeader = request.headers.authorization.split(" ")[1];
-     if(authHeader !== process.env.AuthSecret){
+      if (!request.headers.authorization) {
+        throw new Error("Authorization header missing");
+      }
+      const authHeader = request.headers.authorization.split(" ")[1];
+      if (authHeader !== process.env.AuthSecret) {
         throw new Error("You are not admin...");
+      }
     }
-    }
-}, sendAllButtons);
-  fastify.patch("/update-button/:id", {
+  }, sendAllButtons);
+  fastify.post("/update-button/:id", {
     preHandler: async (request, reply) => {
-    if (!request.headers.authorization) {
-     throw new Error("Authorization header missing");
-    }
-    const authHeader = request.headers.authorization.split(" ")[1];
-     if(authHeader !== process.env.AuthSecret){
+      if (!request.headers.authorization) {
+        throw new Error("Authorization header missing");
+      }
+      const authHeader = request.headers.authorization.split(" ")[1];
+      if (authHeader !== process.env.AuthSecret) {
         throw new Error("You are not admin...");
+      }
     }
+  }, updateButton);
+  fastify.get("/delete-button/:id", {
+    preHandler: async (request, reply) => {
+      if (!request.headers.authorization) {
+        throw new Error("Authorization header missing");
+      }
+      const authHeader = request.headers.authorization.split(" ")[1];
+      if (authHeader !== process.env.AuthSecret) {
+        throw new Error("You are not admin...");
+      }
     }
-},updateButton);
+  }, deleteButton);
 };
 
 export default routes;

@@ -11,9 +11,9 @@ import Contact from "./Pages/Contact";
 import AboutUs from "./Pages/AboutUs";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import AddButton from "./Pages/AddButton";
+import AdminPage from "./Pages/AdminPage";
 
 const App = () => {
-
   return (
     <>
       <NavBar />
@@ -29,6 +29,9 @@ const App = () => {
         <Route path="/add-button" element={<AddButton />} />
 
         <Route path="/view-code/:id" element={<ViewCode />} />
+        <Route path="/admin" element={<AdminPage />} />
+
+        <Route path="*" element={<Home />} />
       </Routes>
 
       <Footer />

@@ -1,3 +1,4 @@
+import { MdOutlineAdminPanelSettings } from "react-icons/md";
 import { useEffect, useState } from "react";
 import { TiThMenu } from "react-icons/ti";
 import { ImCross } from "react-icons/im";
@@ -8,10 +9,17 @@ import { FaGithub } from "react-icons/fa";
 
 const NavBar = () => {
   const [ShowMenu, setShowMenu] = useState(false);
-var Location  = useLocation()
- useEffect(() => {
-setShowMenu(false)
- }, [Location])
+  const [IsAdmin, setIsAdmin] = useState(false);
+  useEffect(() => {
+    const authToken = localStorage.getItem("authToken");
+    if (authToken) {
+      setIsAdmin(true);
+    }
+  }, []);
+  var Location = useLocation();
+  useEffect(() => {
+    setShowMenu(false);
+  }, [Location]);
 
   return (
     <div className="w-[100vw] z-100 flex font-semibold cursor-pointer mt-4 sticky top-2 justify-center items-center">
@@ -31,7 +39,12 @@ setShowMenu(false)
               All Elements
             </span>
           </Link>
-          <span onClick={()=>window.open('https://ko-fi.com/hassaanhaiderdev', '_blank')} className="relative overflow-hidden h-6 group">
+          <span
+            onClick={() =>
+              window.open("https://ko-fi.com/hassaanhaiderdev", "_blank")
+            }
+            className="relative overflow-hidden h-6 group"
+          >
             <span className="block group-hover:-translate-y-full transition-transform duration-300">
               Donate
             </span>
@@ -47,7 +60,10 @@ setShowMenu(false)
               Blogs
             </span>
           </Link>
-           <Link to={"/add-button"} className="relative overflow-hidden h-6 group">
+          <Link
+            to={"/add-button"}
+            className="relative overflow-hidden h-6 group"
+          >
             <span className="block group-hover:-translate-y-full transition-transform duration-300">
               Add Button
             </span>
@@ -55,24 +71,29 @@ setShowMenu(false)
               Add Button
             </span>
           </Link>
-        
         </div>
 
         <div className="hidden ml-14 md:flex items-center gap-4">
-          <section className="flex justify-center items-center">
-            <button
-              onClick={() => {
-                window.open("https://github.com/hassaanhaider88/ButtonJS");
-              }}
-              type="button"
-              className="group flex justify-center p-2 rounded-md drop-shadow-xl bg-[#050505] from-gray-800 to-black text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
-            >
-              <FaGithub size={25} />
-              <span className="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-200 text-nowrap group-hover:text-sm group-hover:-translate-y-10 duration-700">
-                Star on GitHub
-              </span>
-            </button>
-          </section>
+          {IsAdmin ? (
+            <Link to={"/admin"} className="hover:text-indigo-600">
+              <MdOutlineAdminPanelSettings size={25} />
+            </Link>
+          ) : (
+            <section className="flex justify-center items-center">
+              <button
+                onClick={() => {
+                  window.open("https://github.com/hassaanhaider88/ButtonJS");
+                }}
+                type="button"
+                className="group flex justify-center p-2 rounded-md drop-shadow-xl bg-[#050505] from-gray-800 to-black text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
+              >
+                <FaGithub size={25} />
+                <span className="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-200 text-nowrap group-hover:text-sm group-hover:-translate-y-10 duration-700">
+                  Star on GitHub
+                </span>
+              </button>
+            </section>
+          )}
         </div>
         <button
           onClick={() => setShowMenu(!ShowMenu)}
@@ -95,11 +116,17 @@ setShowMenu(false)
           <Link className="hover:text-indigo-600" to={"/add-button"}>
             Add Button
           </Link>
-          <span onClick={()=>window.open('https://ko-fi.com/hassaanhaiderdev', '_blank')} className="hover:text-indigo-600" to={"/donate"}>
+          <span
+            onClick={() =>
+              window.open("https://ko-fi.com/hassaanhaiderdev", "_blank")
+            }
+            className="hover:text-indigo-600"
+            to={"/donate"}
+          >
             Donate
           </span>
-          
-            <section className="flex justify-center items-center">
+
+          <section className="flex justify-center items-center">
             <button
               onClick={() => {
                 window.open("https://github.com/hassaanhaider88/ButtonJS");

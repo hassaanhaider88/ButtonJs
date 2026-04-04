@@ -13,8 +13,7 @@ const getButtonsFromBG = async (page) => {
         CachedData[page] = data.data;
         return data.data;
     } catch (error) {
-        console.error("Error fetching buttons from backend:", error);
-        return [];
+        throw new Error(`HTTP error! status: ${error.message}`);
     }
 }
 

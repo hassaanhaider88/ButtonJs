@@ -2,7 +2,6 @@
 
 @theme {
   --breakpoint-xs: 400px;
- 
 }
 
 body {
@@ -10,20 +9,15 @@ body {
   overflow-x: hidden;
 }
 
-button {
-  cursor: pointer;
-  color:white;
-}
-
-*::selection{
+*::selection {
   background: #fff;
   color: #101319;
 }
 
 .CustomScrollForCards {
-  overflow: auto;                /* enable scrolling */
-  scrollbar-width: none;        /* Firefox */
-  -ms-overflow-style: none;     /* IE and Edge */
+  overflow: auto; /* enable scrolling */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
 /* Chrome, Safari, Edge */
