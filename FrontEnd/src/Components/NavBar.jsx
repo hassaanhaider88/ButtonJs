@@ -25,7 +25,12 @@ const NavBar = () => {
     <div className="w-[100vw] z-100 flex font-semibold cursor-pointer mt-4 sticky top-2 justify-center items-center">
       <nav className="flex justify-between bg-[#101319]  w-[90vw] items-center border mx-4 border-slate-700 px-6  rounded-full text-white text-sm">
         <Link to="/">
-          <img src="./ButtonJs.png" className="w-16 h-16" alt="" />
+          <img
+            src="/ButtonJs.png"
+            loading="eager"
+            className="w-16 h-16"
+            alt=""
+          />
         </Link>
         <div className="hidden md:flex items-center gap-6 ml-7">
           <Link

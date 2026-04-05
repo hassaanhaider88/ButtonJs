@@ -2,9 +2,9 @@ import fastify from "fastify";
 import dotenv from "dotenv";
 import compression from '@fastify/compress'
 import cors from "@fastify/cors"
-import {connectDB} from "./config/ConnetDB.js";
-import {rateLimit} from "./middlewares/rateLimitter.js";
-import {requestLogger} from "./middlewares/logger.js";
+import { connectDB } from "./config/ConnetDB.js";
+import { rateLimit } from "./middlewares/rateLimitter.js";
+import { requestLogger } from "./middlewares/logger.js";
 import ButtonRoutes from "./routes/Buttons.Routes.js";
 
 
@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
     }
 });
 
-app.register(ButtonRoutes, {prefix : "/api/buttons"})
+app.register(ButtonRoutes, { prefix: "/api/buttons" })
 
 // app.get("/api/allbuttons", async (req, res) => {
 
@@ -44,10 +44,10 @@ app.register(ButtonRoutes, {prefix : "/api/buttons"})
 //     }
 // })
 
-app.listen({ port: PORT }, function (err, address) {
+app.listen({ port: PORT, host: "0.0.0.0" }, (err, address) => {
     if (err) {
-        app.log.error(err)
-        process.exit(1)
+        console.error(err);
+        process.exit(1);
     }
-    console.log(`Server is running at ${address}`);
-})
+    console.log(`Server running at ${address}`);
+});

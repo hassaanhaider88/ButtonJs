@@ -19,7 +19,6 @@ const ViewCode = () => {
   const [ReactTailCode, setReactTailCode] = useState(null);
   const [Loading, setLoading] = useState(false);
   useEffect(() => {
-    console.log(id);
     const fetchSingleBtn = async () => {
       setLoading(true);
       try {
@@ -41,6 +40,7 @@ const ViewCode = () => {
     };
 
     fetchSingleBtn();
+    window.scrollTo(0, 0, { behaviour: "smooth" });
   }, []);
 
   const [IsblackBG, setIsblackBG] = useGlobalState("IsBlackBG", false, {
