@@ -25,7 +25,7 @@ npm start
 
 ## 🚀 Usage
 
-1. Visit [ButtonJS Demo](https://buttonjs.vercel.app) *(replace with your live demo link)*.
+1. Visit [ButtonJS Demo](https://buttonsjs.netlify.app/) *(replace with your live demo link)*.
 2. Pick your favorite button style.
 3. Copy the JSX + TailwindCSS classes directly into your project.
 4. Enjoy!
